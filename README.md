@@ -5,63 +5,63 @@
 <p align="left">
   <a href="https://www.cplusplus.com/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
-         alt="c++" width="55" height="60" />
+         alt="c++" width="35" height="40" />
   </a>
   <a href="https://www.python.org/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" 
-         alt="python logo" width="50" height="50" />
+         alt="python logo" width="35" height="35" />
   </a>
   <a href="https://www.java.com/en/">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/java_original_wordmark_logo_icon_146459.png"         
-         alt="java" width="50" height="50" />
+         alt="java" width="40" height="40" />
   </a>
   <a href="https://www.javascript.com/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" 
-         alt="JavaScript" width="50" height="50" />
+         alt="JavaScript"width="35" height="35"/>
   </a>
   <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_html_icon_130541.png" 
-         alt="HTML" width="50" height="50" />
+         alt="HTML" width="35" height="35" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_css_icon_130661.png" 
-         alt="CSS" width="50" height="50" />
+         alt="CSS"width="35" height="35"/>
   </a>
   <a href="https://en.wikipedia.org/wiki/PHP" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/php_icon_130857.png" 
-         alt="PHP" width="50" height="50" />
+         alt="PHP" width="35" height="35" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
     <img src="https://iconape.com/wp-content/files/fe/83764/svg/nodejs-1.svg" 
-         alt="Node.js" width="65" height="60" />
+         alt="Node.js" width="35" height="35" />
   </a>
   <a href="https://expressjs.com/" target="_blank">
     <img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png" 
-         alt="Express" width="50" height="50" />
+         alt="Express" width="35" height="35" />
   </a>
   <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/mysql_original_wordmark_logo_icon_146417.png" 
-         alt="MySQL" width="50" height="50" />
+         alt="MySQL"width="35" height="35" />
   </a>
   <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/mongodb_plain_wordmark_logo_icon_146423.png" 
-         alt="MongoDB" width="50" height="50" />
+         alt="MongoDB" width="35" height="35"/>
   </a>
   <a href="https://getbootstrap.com/" target="_blank">
     <img src="https://www.clipartmax.com/png/full/184-1844911_bootstrap-bootstrap-4-logo-png.png" 
-         alt="Bootstrap" width="50" height="50" />
+         alt="Bootstrap" width="35" height="35" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_rust_icon_130185.png" 
-         alt="Rust" width="50" height="50" />
+         alt="Rust" width="35" height="35" />
   </a>
   <a href="https://laravel.com/">
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/laravel_icon_130892.png" 
-         alt="Laravel" width="50" height="50" />
+         alt="Laravel"width="35" height="35"/>
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" 
-         alt="bash" width="50" height="50" /> 
+         alt="bash" width="35" height="35" /> 
   </a>
 </p>
 
@@ -69,47 +69,47 @@
 <p align="left">
   <a href="https://cmder.net/">
     <img src="https://img.stackshare.io/service/1964/default_ad0a1dfe7aca641e2c9766d095e8dced94660fe3.png" 
-         alt="cemder" width="50" height="50" />
+         alt="cemder" width="35" height="35"/>
   </a>
   <a href="https://code.visualstudio.com/">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_vscode_icon_130084.png" 
-         alt="vscode" width="50" height="50"/>
+         alt="vscode" width="35" height="35"/>
   </a>
   <a href="https://www.getpostman.com/">
     <img src="https://cdn.icon-icons.com/icons2/3053/PNG/128/postman_macos_bigsur_icon_189815.png" 
-         alt="postman" width="50" height="50" />
+         alt="postman"width="35" height="35" />
   </a>
   <a href="https://firebase.google.com/">
     <img src="https://cdn.icon-icons.com/icons2/2699/PNG/128/firebase_logo_icon_171157.png" 
-         alt="firebase"  width="50" height="50"/>
+         alt="firebase" width="35" height="35"/>
   </a>
   <a href="https://git-scm.com/">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/git_plain_logo_icon_146507.png" 
-         alt="git" width="50" height="50"/>
+         alt="git" width="35" height="35"/>
   </a>
   <a href="https://www.linux.org/">
     <img src="https://cdn.icon-icons.com/icons2/46/PNG/128/linux_penguin_animal_9362.png" 
-         alt="linux" width="55" height="55"/>
+         alt="linux" width="40" height="40"/>
   </a>
   <a href="https://www.office.com/">
     <img src="https://cdn.icon-icons.com/icons2/1156/PNG/128/1486565573-microsoft-office_81557.png" 
-         alt="office" width="50" height="50"/>
+         alt="office" width="35" height="35"/>
   </a>
   <a href="https://www.adobe.com/">
     <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_xd_folder_icon_133957.png" 
-         alt="adobe" width="55" height="45"/>
+         alt="adobe" width="45" height="35"/>
   </a>
   <a href="https://www.adobe.com/">
     <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_photoshop_folder_icon_133961.png" 
-         alt="adobe" width="55" height="45"/>
+         alt="adobe" width="45" height="35"/>
   </a>
   <a href="https://www.jetbrains.com/">
     <img src="https://cdn.icon-icons.com/icons2/1381/PNG/128/jetbrainstoolbox_93803.png"
-         alt="jetbrains" width="50" height="50"/>
+         alt="jetbrains" width="35" height="35"/>
   </a>
   <a href="https://visualstudio.microsoft.com/">
     <img src="https://cdn.icon-icons.com/icons2/112/PNG/128/visual_studio_18908.png"
-         alt="visualstudio" width="50" height="50"/>
+         alt="visualstudio" width="35" height="35"/>
   </a>
 </p>
 
