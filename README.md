@@ -32,11 +32,11 @@
          alt="PHP" width="50" height="50" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
-    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_node_icon_130301.png" 
-         alt="Node.js" width="50" height="50" />
+    <img src="https://iconape.com/wp-content/files/fe/83764/svg/nodejs-1.svg" 
+         alt="Node.js" width="65" height="60" />
   </a>
   <a href="https://expressjs.com/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" 
+    <img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png" 
          alt="Express" width="50" height="50" />
   </a>
   <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank">
@@ -48,7 +48,7 @@
          alt="MongoDB" width="50" height="50" />
   </a>
   <a href="https://getbootstrap.com/" target="_blank">
-    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/bootstrap_plain_logo_icon_146619.png" 
+    <img src="https://www.clipartmax.com/png/full/184-1844911_bootstrap-bootstrap-4-logo-png.png" 
          alt="Bootstrap" width="50" height="50" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">
