@@ -4,8 +4,8 @@
 <h3 align="left">Languages: </h3>
 <p align="left">
   <a href="https://www.cplusplus.com/">
-    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png"
-         alt="c++" width="50" height="50" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+         alt="c++" width="55" height="60" />
   </a>
   <a href="https://www.python.org/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" 
@@ -59,14 +59,14 @@
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/laravel_icon_130892.png" 
          alt="Laravel" width="50" height="50" />
   </a>
-</p>
-
-<h3 align="left">Tools: </h3>
-<p align="left">
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" 
          alt="bash" width="50" height="50" /> 
   </a>
+</p>
+
+<h3 align="left">Tools: </h3>
+<p align="left">
   <a href="https://cmder.net/">
     <img src="https://img.stackshare.io/service/1964/default_ad0a1dfe7aca641e2c9766d095e8dced94660fe3.png" 
          alt="cemder" width="50" height="50" />
@@ -97,11 +97,11 @@
   </a>
   <a href="https://www.adobe.com/">
     <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_xd_folder_icon_133957.png" 
-         alt="adobe" width="55" height="50"/>
+         alt="adobe" width="55" height="45"/>
   </a>
   <a href="https://www.adobe.com/">
     <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_photoshop_folder_icon_133961.png" 
-         alt="adobe" width="55" height="50"/>
+         alt="adobe" width="55" height="45"/>
   </a>
   <a href="https://www.jetbrains.com/">
     <img src="https://cdn.icon-icons.com/icons2/1381/PNG/128/jetbrainstoolbox_93803.png"
