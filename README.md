@@ -1,5 +1,9 @@
 <h1 align="center">Hi 👋, I'm Kirollos Atef</h1>
-<h2 align="center">Back-End developer 👩‍💻</h3>
+<h3 align="center">Information System Student , Back-stack developer, Node.js Express 🚀</h3>
+
+- 📫 How to reach me **kirolskiroatef.com@gmail.com**
+
+- ⚡ Fun fact **I think I am funny**
 
 <h3 align="left">Languages: </h3>
 <p align="left">
@@ -62,6 +66,30 @@
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" 
          alt="bash" width="35" height="35" /> 
+  </a>
+  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" 
+         alt="c" width="40" height="40"/> 
+  </a> 
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" 
+         alt="figma" width="40" height="40"/> 
+  </a> 
+  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+         alt="matlab" width="40" height="40"/>
+  </a> 
+  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> 
+    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" 
+         alt="mssql" width="40" height="40"/> 
+  </a> 
+  <a href="https://pugjs.org" target="_blank" rel="noreferrer"> 
+    <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" 
+         alt="pug" width="40" height="40"/>
+  </a> 
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" 
+         alt="typescript" width="40" height="40"/> 
   </a>
 </p>
 
@@ -145,4 +173,10 @@
          src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" 
          alt="Gmail"/>
   </a>
+  <a href="https://stackoverflow.com/users/15191488" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" 
+         alt="15191488" height="30" width="40" />
+  </a>
 </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" /> </p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact" alt="kirollosatef" /></p>
