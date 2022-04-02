@@ -5,7 +5,7 @@
 
 - ⚡ Fun fact **I think I am funny**
 
-<img align="right" alt="Coding" width="450" src="https://media4.giphy.com/media/ukMiDlCmdv2og/200w.gif?cid=82a1493b6crvsuimtnz9zryaqtm7qe36z4b2tr0077ybbrx9&rid=200w.gif&ct=g">
+<img align="right" alt="Coding" width="450" src="https://media0.giphy.com/media/RbDKaczqWovIugyJmW/200.gif">
 <h3 align="left">Languages: </h3>
 <p align="left">
   <a href="https://www.cplusplus.com/">
