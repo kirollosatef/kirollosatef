@@ -5,6 +5,7 @@
 
 - ⚡ Fun fact **I think I am funny**
 
+<img align="right" alt="Coding" width="450" src="https://media4.giphy.com/media/ukMiDlCmdv2og/200w.gif?cid=82a1493b6crvsuimtnz9zryaqtm7qe36z4b2tr0077ybbrx9&rid=200w.gif&ct=g">
 <h3 align="left">Languages: </h3>
 <p align="left">
   <a href="https://www.cplusplus.com/">
@@ -178,5 +179,9 @@
          alt="15191488" height="30" width="40" />
   </a>
 </p>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" /> </p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact" alt="kirollosatef" /></p>
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact" alt="kirollosatef" />
+</p>
