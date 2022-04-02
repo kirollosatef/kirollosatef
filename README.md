@@ -14,47 +14,47 @@
   </a>
   <a href="https://www.python.org/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" 
-         alt="python logo" width="35" height="35" />
+         alt="python logo" width="40" height="40" />
   </a>
   <a href="https://www.java.com/en/">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/java_original_wordmark_logo_icon_146459.png"         
-         alt="java" width="40" height="40" />
+         alt="java" width="45" height="45" />
   </a>
   <a href="https://www.javascript.com/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" 
-         alt="JavaScript"width="35" height="35"/>
+         alt="JavaScript"width="40" height="40"/>
   </a>
   <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_html_icon_130541.png" 
-         alt="HTML" width="35" height="35" />
+         alt="HTML" width="40" height="40" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_css_icon_130661.png" 
-         alt="CSS"width="35" height="35"/>
+         alt="CSS"width="40" height="40"/>
   </a>
   <a href="https://en.wikipedia.org/wiki/PHP" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/php_icon_130857.png" 
-         alt="PHP" width="35" height="35" />
+         alt="PHP" width="40" height="40" />
   </a>
   <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
     <img src="https://iconape.com/wp-content/files/fe/83764/svg/nodejs-1.svg" 
-         alt="Node.js" width="35" height="35" />
+         alt="Node.js" width="40" height="40" />
   </a>
   <a href="https://expressjs.com/" target="_blank">
     <img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png" 
-         alt="Express" width="35" height="35" />
+         alt="Express" width="40" height="40"  />
   </a>
   <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/mysql_original_wordmark_logo_icon_146417.png" 
-         alt="MySQL"width="35" height="35" />
+         alt="MySQL" width="50" height="50"  />
   </a>
   <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2415/PNG/128/mongodb_plain_wordmark_logo_icon_146423.png" 
-         alt="MongoDB" width="35" height="35"/>
+         alt="MongoDB"  width="40" height="40"/>
   </a>
   <a href="https://getbootstrap.com/" target="_blank">
     <img src="https://www.clipartmax.com/png/full/184-1844911_bootstrap-bootstrap-4-logo-png.png" 
-         alt="Bootstrap" width="35" height="35" />
+         alt="Bootstrap"  width="40" height="40"  />
   </a>
   <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_rust_icon_130185.png" 
@@ -62,19 +62,15 @@
   </a>
   <a href="https://laravel.com/">
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/laravel_icon_130892.png" 
-         alt="Laravel"width="35" height="35"/>
+         alt="Laravel" width="40" height="40" />
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-    <img src="https://cdn-icons-png.flaticon.com/512/919/919837.png" 
-         alt="bash" width="35" height="35" /> 
+    <img src="https://bashlogo.com/img/symbol/png/full_colored_light.png" 
+         alt="bash"  width="40" height="45"  /> 
   </a>
   <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" 
          alt="c" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" 
-         alt="figma" width="40" height="40"/> 
   </a> 
   <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> 
     <img src="https://www.freeiconspng.com/uploads/sql-server-icon-8.png" 
@@ -122,27 +118,31 @@
   </a>
   <a href="https://www.office.com/">
     <img src="https://cdn.icon-icons.com/icons2/1156/PNG/128/1486565573-microsoft-office_81557.png" 
-         alt="office" width="35" height="35"/>
+         alt="office" width="43" height="43"/>
   </a>
   <a href="https://www.adobe.com/">
-    <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_xd_folder_icon_133957.png" 
-         alt="adobe" width="45" height="35"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" 
+         alt="adobe" width="40" height="40"/>
   </a>
   <a href="https://www.adobe.com/">
-    <img src="https://cdn.icon-icons.com/icons2/2198/PNG/128/adobe_photoshop_folder_icon_133961.png" 
-         alt="adobe" width="45" height="35"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" 
+         alt="adobe" width="40" height="40"/>
   </a>
   <a href="https://www.jetbrains.com/">
     <img src="https://cdn.icon-icons.com/icons2/1381/PNG/128/jetbrainstoolbox_93803.png"
-         alt="jetbrains" width="35" height="35"/>
+         alt="jetbrains" width="40" height="40"/>
   </a>
   <a href="https://visualstudio.microsoft.com/">
     <img src="https://cdn.icon-icons.com/icons2/112/PNG/128/visual_studio_18908.png"
-         alt="visualstudio" width="35" height="35"/>
+         alt="visualstudio" width="40" height="40"/>
   </a>
   <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
          alt="matlab" width="40" height="40"/>
+  </a> 
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" 
+         alt="figma" width="40" height="40"/> 
   </a> 
 </p>
 
