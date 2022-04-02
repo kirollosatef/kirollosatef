@@ -58,7 +58,7 @@
   </a>
   <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/128/file_type_rust_icon_130185.png" 
-         alt="Rust" width="35" height="35" />
+         alt="Rust" width="43" height="43" />
   </a>
   <a href="https://laravel.com/">
     <img src="https://cdn.icon-icons.com/icons2/2108/PNG/128/laravel_icon_130892.png" 
@@ -76,12 +76,8 @@
     <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" 
          alt="figma" width="40" height="40"/> 
   </a> 
-  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
-         alt="matlab" width="40" height="40"/>
-  </a> 
   <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> 
-    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" 
+    <img src="https://www.freeiconspng.com/uploads/sql-server-icon-8.png" 
          alt="mssql" width="40" height="40"/> 
   </a> 
   <a href="https://pugjs.org" target="_blank" rel="noreferrer"> 
@@ -91,6 +87,10 @@
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" 
          alt="typescript" width="40" height="40"/> 
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ejs_icon_130626.png" 
+         alt="EJS" width="40" height="40"/> 
   </a>
 </p>
 
@@ -140,6 +140,10 @@
     <img src="https://cdn.icon-icons.com/icons2/112/PNG/128/visual_studio_18908.png"
          alt="visualstudio" width="35" height="35"/>
   </a>
+  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+         alt="matlab" width="40" height="40"/>
+  </a> 
 </p>
 
 <h3 align="left">Connect with me: </h3>
