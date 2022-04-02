@@ -165,14 +165,8 @@
   <a href="https://twitter.com/AtefKirols" target="blank">
     <img 
          align="center" height="40" width="40"
-         src="https://cdn-icons.flaticon.com/png/128/3256/premium/3256013.png?token=exp=1648681364~hmac=14f8b9808ea78f4cbe124152b14a0646" 
+         src="https://cdn-icons-png.flaticon.com/512/124/124021.png" 
          alt="twitter"/>
-  </a>
-  <a href="mailto:Kirolskiroate.com@gmail.com" target="blank">
-    <img 
-         align="center" height="40" width="40"
-         src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" 
-         alt="Gmail"/>
   </a>
   <a href="https://stackoverflow.com/users/15191488" target="blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" 
