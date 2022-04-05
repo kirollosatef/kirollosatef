@@ -3,9 +3,9 @@
 
 - 📫 How to reach me **kirolskiroatef.com@gmail.com**
 
-<img align="right" alt="Coding" width="450" src="https://media0.giphy.com/media/RbDKaczqWovIugyJmW/200.gif">
-
 - ⚡ Fun fact **I think I am funny**
+
+<img align="right" alt="Coding" width="450" src="https://media0.giphy.com/media/RbDKaczqWovIugyJmW/200.gif">
 
 <h3 align="left">Languages: </h3>
 <p align="left">
