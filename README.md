@@ -152,7 +152,7 @@
   <a href="https://www.linkedin.com/in/kirollos-atef-fawze-6b87b61b3/" target="blank">
     <img 
          align="center" height="40" width="40"
-         src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536505.png?token=exp=1648681006~hmac=d9b842afbfecb9fd92a34390fdd710a3" 
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEhVDHtC_MPbet9Iirxz2e9SCktSRH06CVew&usqp=CAU" 
          alt="linkedin"/>
   </a>
   <a href="https://www.facebook.com/profile.php?id=100009539839127" target="blank">
@@ -179,5 +179,5 @@
   </a>
 </p>
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
+  <img  src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
 </p>
