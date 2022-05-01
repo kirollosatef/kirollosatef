@@ -3,7 +3,7 @@
 
 - 📫 How to reach me **kirolskiroatef.com@gmail.com**
 
-- ⚡ Fun fact **I think I am funny**
+- ⚡**I think I am funny**
 
 <img align="right" alt="Coding" width="450" src="https://media0.giphy.com/media/RbDKaczqWovIugyJmW/200.gif">
 
