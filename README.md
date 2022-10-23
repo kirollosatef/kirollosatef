@@ -5,16 +5,16 @@
 <br />
 
 <pre>
-$ cat profile.txt
+KirollosAtef@github:~$ cat -n profile.txt
 
-- Development: OOP, Algorithms, Data-Structure, design patterns and problem solving
-- Languages/Scripts: C++, Java, python, PHP, JS, TS, Rust
-- Backend Frameworks: NodeJs, Express, Laravel
-- Frontend Frameworks/Libraries: ReactJs
-- DevOps: AWS, Azure, Docker, CI/CD
-- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL
-- Others: Migrate, Testing, Sockets, Authentication, Caching
-- Tools: Git, VSCODE, Linux
+1- Development: OOP, Algorithms, Data-Structure, design patterns and problem solving
+2- Languages/Scripts: C++, Java, python, PHP, JS, TS, Rust
+3- Backend Frameworks: NodeJs, Express, Laravel
+4- Frontend Frameworks/Libraries: ReactJs
+5- DevOps: AWS, Azure, Docker, CI/CD
+6- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL
+7- Others: Migrate, Testing, Sockets, Auth, Caching
+8- Tools: Git, VSCODE, Linux
 </pre>
 
 <p align="lift">
