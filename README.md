@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Kirollos Atef</h1>
 
-<h3 align="center">Information System Student || Back-end #Node.Js #React.Js || Junior Software Engineer</h3>
+<h3 align="center"> Computer Science Student || Junior Back-end Software Engineer </h3>
 
 <br />
 
@@ -9,12 +9,12 @@ KirollosAtef@github:~$ cat -n profile.txt
 
 1- Development: OOP, Algorithms, Data-Structure, design patterns and problem solving
 2- Languages/Scripts: C++, Java, python, PHP, JS, TS, Rust
-3- Backend Frameworks: NodeJs, Express, Laravel
-4- Frontend Frameworks/Libraries: ReactJs
-5- DevOps: AWS, Azure, Docker, CI/CD
+3- Backend Frameworks: NodeJs (ExpressJS, NestJS), Laravel
+4- Frontend Frameworks/Libraries: HTML, CSS, Bootstrab, ReactJs
+5- DevOps: AWS,GDS Azure, Docker, CI/CD, Kubernates, CircleCI
 6- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL
-7- Others: Migrate, Testing, Sockets, Auth, Caching
-8- Tools: Git, VSCODE, Linux
+7- Others: ORMs, Testing, Sockets, OAuth, Caching
+8- Tools: Git, VSCODE, Linux, trello, openapi, Swagger, postman
 </pre>
 
 <p align="lift">
