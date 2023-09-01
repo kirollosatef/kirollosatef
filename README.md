@@ -31,8 +31,8 @@ KirollosAtef@github:~$ cat -n profile.txt
          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEhVDHtC_MPbet9Iirxz2e9SCktSRH06CVew&usqp=CAU"
          alt="linkedin"/>
   </a>
+  <img  align="right" src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
 </p>
 
-<p align="right">
-  <img  src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
+<p ">
 </p>
