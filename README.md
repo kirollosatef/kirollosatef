@@ -33,9 +33,3 @@ KirollosAtef@github:~$ cat -n profile.txt
   </a>
   <img  align="right" src="https://komarev.com/ghpvc/?username=kirollosatef&label=Profile%20views&color=0e75b6&style=flat" alt="kirollosatef" />
 </p>
-
-<p ">
-</p>
-<p align="center">
-    <a href="https://www.buymeacoffee.com/kirollosatef" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-</p>
