@@ -17,6 +17,14 @@ KirollosAtef@github:~$ cat -n profile.txt
 8- Tools: Git, VSCODE, Linux, trello, openapi, Swagger, postman
 </pre>
 
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kirollosatef&show_icons=true&include_all_commits=true&count_private=true&text_color=FFA718&theme=transparent&show_icons=true"
+alt="kirollosatef"/>
+  <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact&langs_count=20&icon_color=2fcca3&text_color=FFA718&theme=transparent&show_icons=true" alt="kirollosatef"/>
+
+</div>
+
 <p align="lift">
 
 - 📫 How to reach me **kirollosateffawze@gmail.com** <a href="https://wa.me/qr/IM3XRAMWZ2CKK1" target="blank">
