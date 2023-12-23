@@ -7,14 +7,14 @@
 <pre>
 KirollosAtef@github:~$ cat -n profile.txt
 
-1- Development: OOP, Algorithms, Data-Structure, design patterns and problem solving
-2- Languages/Scripts: C++, Java, python, PHP, JS, TS, Rust
-3- Backend Frameworks: NodeJs (ExpressJS, NestJS), Laravel
-4- Frontend Frameworks/Libraries: HTML, CSS, Bootstrab, ReactJs
-5- DevOps: AWS,GDS Azure, Docker, CI/CD, Kubernates, CircleCI
-6- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL
-7- Others: ORMs, Testing, Sockets, OAuth, Caching
-8- Tools: Git, VSCODE, Linux, trello, openapi, Swagger, postman
+1- Development: OOP, Algorithms, data structure, design patterns, problem-solving, system design, OS, Networking ...
+2- Backend Frameworks: NodeJs (ExpressJS, NestJS), Laravel
+3- Languages/Scripts: C, C++, Java, Python, PHP, JS, TS, Rust, SQL, Bash
+4- DevOps: AWS, GDS Azure, Docker, CI/CD, Kubernetes, Terraform
+5- Frontend Frameworks/Libraries: (HTML, CSS), ReactJs, tailwind css
+6- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL, Redis
+7- Others: ORMs, Testing, Sockets, OAuth, Caching 
+8- Tools: Git, VSCODE, Linux, openapi, and more...
 </pre>
 
 
