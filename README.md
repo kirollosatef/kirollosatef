@@ -11,7 +11,7 @@ KirollosAtef@github:~$ cat -n profile.txt
 2- Backend Frameworks: NodeJs (ExpressJS, NestJS), Laravel
 3- Languages/Scripts: C, C++, Java, Python, PHP, JS, TS, Rust, SQL, Bash
 4- DevOps: AWS, GDS Azure, Docker, CI/CD, Kubernetes, Terraform
-5- Frontend Frameworks/Libraries: (HTML, CSS), ReactJs, tailwind css
+5- Frontend Frameworks/Libraries: (HTML, CSS), ReactJs, tailwind css, NextJs
 6- Databases: MySQL, SQL Server, PostgreSQL, MongoDB, GraphQL, Redis
 7- Others: ORMs, Testing, Sockets, OAuth, Caching 
 8- Tools: Git, VSCODE, Linux, openapi, and more...
