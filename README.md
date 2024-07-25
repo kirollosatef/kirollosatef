@@ -21,7 +21,7 @@ KirollosAtef@github:~$ cat -n profile.txt
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kirollosatef&show_icons=true&include_all_commits=true&count_private=true&text_color=FFA718&theme=transparent&show_icons=true"
 alt="kirollosatef"/>
-  <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact&langs_count=20&icon_color=2fcca3&text_color=FFA718&theme=transparent&show_icons=true" alt="kirollosatef"/>
+  <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=kirollosatef&show_icons=true&locale=en&layout=compact&langs_count=10&icon_color=2fcca3&text_color=FFA718&theme=transparent&show_icons=true" alt="kirollosatef"/>
 
 </div>
 
