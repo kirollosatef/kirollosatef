@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Kirollos Atef</h1>
 
-<h3 align="center"> Computer Science Student || Software Engineer || Back-End MERN </h3>
+<h3 align="center">  Software Engineer || Back-End </h3>
 
 <br />
 
