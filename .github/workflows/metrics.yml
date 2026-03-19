@@ -1,0 +1,18 @@
+# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
+name: Metrics
+on:
+  schedule: [{ cron: "0 * * * *" }]
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: kirollosatef
+          template: classic
+          base: header, activity, repositories, metadata
+          config_timezone: Africa/Cairo
+          plugin_lines: yes
