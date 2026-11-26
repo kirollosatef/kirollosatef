@@ -215,7 +215,6 @@ def info_rows(s, today):
         ("kv", "Email.Work", "kirollos@customgpt.ai"),
         ("kv", "LinkedIn", "kirollos-atef-fawze"),
         ("kv", "X", "@kiro_af"),
-        ("kv", "GitHub", "kirollosatef"),
         ("blank",),
         ("header", "GitHub Stats", "- "),
         # Two columns side by side on desktop, one after the other on phones.

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="500px" height="1293px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="500px" height="1273px" font-size="16px">
 <style>@font-face{src:local('Consolas'),local('Consolas Bold');font-family:'ConsolasFallback';font-display:swap;-webkit-size-adjust:109%;size-adjust:109%;}.key{fill:#ffa657;}.value{fill:#a5d6ff;}.add{fill:#3fb950;}.del{fill:#f85149;}.cc{fill:#616e7f;}.title{fill:#c9d1d9;}.eq{fill:#58a6ff;opacity:.55;font-style:italic;}.hero{opacity:1;font-weight:bold;font-size:14px;}text,tspan{white-space:pre;}</style>
-<rect width="500px" height="1293px" fill="#161b22" rx="15"/>
+<rect width="500px" height="1273px" fill="#161b22" rx="15"/>
 <text x="32.2" y="30" fill="#c9d1d9" font-size="11px">
 <tspan x="32.2" y="30"></tspan>
 <tspan x="32.2" y="43"></tspan>
@@ -82,15 +82,14 @@
 <tspan x="20" y="1003"><tspan class="cc">. </tspan><tspan class="key">Email.Work:</tspan><tspan class="cc"> ............ </tspan><tspan class="value">kirollos@customgpt.ai</tspan></tspan>
 <tspan x="20" y="1023"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ................ </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
 <tspan x="20" y="1043"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">@kiro_af</tspan></tspan>
-<tspan x="20" y="1063"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ......................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
-<tspan x="20" y="1083"><tspan class="cc">. </tspan></tspan>
-<tspan x="20" y="1103"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————-—-</tspan></tspan>
-<tspan x="20" y="1123"><tspan class="cc">. </tspan><tspan class="key">Followers:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">53</tspan></tspan>
-<tspan x="20" y="1143"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> ................ </tspan><tspan class="value">154 {Contributed: 155}</tspan></tspan>
-<tspan x="20" y="1163"><tspan class="cc">. </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> .................................... </tspan><tspan class="value">64</tspan></tspan>
-<tspan x="20" y="1183"><tspan class="cc">. </tspan><tspan class="key">Contributions.PastWeek:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">328</tspan></tspan>
-<tspan x="20" y="1203"><tspan class="cc">. </tspan><tspan class="key">Contributions.PastYear:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">10,014</tspan></tspan>
-<tspan x="20" y="1223"><tspan class="cc">. </tspan><tspan class="key">Contributions:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">12,038</tspan></tspan>
-<tspan x="20" y="1243"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">12,091,306</tspan></tspan>
-<tspan x="20" y="1263"><tspan class="cc">.                  </tspan><tspan class="cc">( </tspan><tspan class="add">17,551,327++</tspan><tspan class="cc">, </tspan><tspan class="del">5,460,021--</tspan><tspan class="cc"> )</tspan></tspan>
+<tspan x="20" y="1063"><tspan class="cc">. </tspan></tspan>
+<tspan x="20" y="1083"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————-—-</tspan></tspan>
+<tspan x="20" y="1103"><tspan class="cc">. </tspan><tspan class="key">Followers:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">53</tspan></tspan>
+<tspan x="20" y="1123"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> ................ </tspan><tspan class="value">154 {Contributed: 155}</tspan></tspan>
+<tspan x="20" y="1143"><tspan class="cc">. </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> .................................... </tspan><tspan class="value">65</tspan></tspan>
+<tspan x="20" y="1163"><tspan class="cc">. </tspan><tspan class="key">Contributions.PastWeek:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">328</tspan></tspan>
+<tspan x="20" y="1183"><tspan class="cc">. </tspan><tspan class="key">Contributions.PastYear:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">10,014</tspan></tspan>
+<tspan x="20" y="1203"><tspan class="cc">. </tspan><tspan class="key">Contributions:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">12,038</tspan></tspan>
+<tspan x="20" y="1223"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">12,091,306</tspan></tspan>
+<tspan x="20" y="1243"><tspan class="cc">.                  </tspan><tspan class="cc">( </tspan><tspan class="add">17,551,327++</tspan><tspan class="cc">, </tspan><tspan class="del">5,460,021--</tspan><tspan class="cc"> )</tspan></tspan>
 </text></svg>
