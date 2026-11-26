@@ -20,6 +20,7 @@ USER = "kirollosatef"
 JOINED = dt.date(2020, 11, 10)  # GitHub account creation date
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache" / "loc.json"
+SEEN = ROOT / "cache" / "contributed.txt"  # best count seen with the full-access token
 # GH_TOKEN (a personal token) also sees private work; GITHUB_TOKEN is the fallback if it expires.
 TOKENS = [t for t in (os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
 
@@ -124,9 +125,16 @@ def stats():
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
 
+    # The fallback token only sees public repos, so never let the count drop below
+    # what the full-access token last saw.
+    contributed = u["repositoriesContributedTo"]["totalCount"]
+    if SEEN.exists():
+        contributed = max(contributed, int(SEEN.read_text()))
+    SEEN.write_text(str(contributed))
+
     return {
         "repos": len(owned),
-        "contributed": u["repositoriesContributedTo"]["totalCount"],
+        "contributed": contributed,
         "stars": sum(r["stargazerCount"] for r in owned),
         "followers": u["followers"]["totalCount"],
         "commits": commits,
