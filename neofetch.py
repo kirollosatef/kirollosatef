@@ -202,9 +202,9 @@ def info_rows(s, today):
         ("kv", "Followers", n(s["followers"])),
         ("kv", "Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"),
         ("kv", "Stars", n(s["stars"])),
-        ("kv", "Commits", n(s["commits"])),
-        ("kv", "Commits.PastYear", n(s["commits_year"])),
         ("kv", "Commits.PastWeek", n(s["commits_week"])),
+        ("kv", "Commits.PastYear", n(s["commits_year"])),
+        ("kv", "Commits", n(s["commits"])),
         ("loc", n(s["loc"]), n(s["add"]), n(s["del"])),
     ]
 
