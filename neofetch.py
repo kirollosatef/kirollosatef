@@ -20,7 +20,7 @@ USER = "kirollosatef"
 JOINED = dt.date(2020, 11, 10)  # GitHub account creation date
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache" / "loc.json"
-SEEN = ROOT / "cache" / "contributed.txt"  # best count seen with the full-access token
+SEEN = ROOT / "cache" / "totals.json"  # best count seen with the full-access token
 # GH_TOKEN (a personal token) also sees private work; GITHUB_TOKEN is the fallback if it expires.
 TOKENS = [t for t in (os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
 
@@ -67,9 +67,10 @@ def repos(affiliations):
 
 
 def my_history(name_with_owner, author_id):
-    """Additions, deletions and commit count authored by me on the default branch."""
+    """Additions, deletions and commit dates authored by me on the default branch."""
     owner, name = name_with_owner.split("/")
-    add = dele = commits = 0
+    add = dele = 0
+    dates = []
     cursor = None
     while True:
         d = gql(
@@ -77,19 +78,19 @@ def my_history(name_with_owner, author_id):
               repository(owner:$o,name:$n){ defaultBranchRef{ target{ ... on Commit{
                 history(first:100, after:$after, author:{id:$id}){
                   totalCount pageInfo{hasNextPage endCursor}
-                  nodes{ additions deletions } } } } } } }""",
+                  nodes{ additions deletions committedDate } } } } } } }""",
             o=owner, n=name, id=author_id, after=cursor,
         )
         ref = (d["repository"] or {}).get("defaultBranchRef")
         if not ref:
-            return 0, 0, 0
+            return 0, 0, []
         h = ref["target"]["history"]
-        commits = h["totalCount"]
         for c in h["nodes"]:
             add += c["additions"]
             dele += c["deletions"]
+            dates.append(c["committedDate"][:10])
         if not h["pageInfo"]["hasNextPage"]:
-            return add, dele, commits
+            return add, dele, sorted(dates)
         cursor = h["pageInfo"]["endCursor"]
 
 
@@ -113,31 +114,40 @@ def stats():
         hit = cache.get(key)
         if not hit or hit["oid"] != oid:
             try:
-                a, d, c = my_history(r["nameWithOwner"], u["id"])
+                a, d, dates = my_history(r["nameWithOwner"], u["id"])
             except Exception as e:  # one broken repo should not kill the card
                 print(f"skip {key}: {e}")
                 continue
-            cache[key] = {"oid": oid, "add": a, "del": d, "commits": c}
+            cache[key] = {"oid": oid, "add": a, "del": d, "dates": dates}
     # Sum every repo ever seen, so repos the CI token cannot list keep their last count.
-    add = dele = commits = 0
+    add = dele = 0
+    dates = []
     for hit in cache.values():
-        add, dele, commits = add + hit["add"], dele + hit["del"], commits + hit["commits"]
+        add, dele = add + hit["add"], dele + hit["del"]
+        dates += hit.get("dates", [])
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
 
-    # The fallback token only sees public repos, so never let the count drop below
+    # Commit dates are cached per repo, so the rolling windows move forward every day
+    # even for repos the CI token cannot see.
+    today = dt.datetime.now(dt.timezone.utc).date()
+    since = lambda days: (today - dt.timedelta(days=days)).isoformat()
+    year_ago, week_ago = since(365), since(7)
+
+    # The fallback token only sees public work, so never let this drop below
     # what the full-access token last saw.
-    contributed = u["repositoriesContributedTo"]["totalCount"]
-    if SEEN.exists():
-        contributed = max(contributed, int(SEEN.read_text()))
-    SEEN.write_text(str(contributed))
+    seen = json.loads(SEEN.read_text()) if SEEN.exists() else {}
+    contributed = max(u["repositoriesContributedTo"]["totalCount"], seen.get("contributed", 0))
+    SEEN.write_text(json.dumps({"contributed": contributed}, indent=1) + "\n")
 
     return {
         "repos": len(owned),
         "contributed": contributed,
         "stars": sum(r["stargazerCount"] for r in owned),
         "followers": u["followers"]["totalCount"],
-        "commits": commits,
+        "commits": len(dates),
+        "commits_year": sum(d > year_ago for d in dates),
+        "commits_week": sum(d > week_ago for d in dates),
         "loc": add - dele,
         "add": add,
         "del": dele,
@@ -157,64 +167,86 @@ def uptime(start, today):
 
 
 # ---------------------------------------------------------------- SVG
+MOBILE_WIDTH = 48  # characters per info line on the tall phone card
+
+
+def info_rows(s, today):
+    """What the card says, independent of layout."""
+    n = lambda v: f"{v:,}"
+    return [
+        ("header", "kiro@atef", ""),
+        ("kv", "OS", "macOS 26 Tahoe, Linux, Windows"),
+        ("kv", "Uptime", uptime(JOINED, today)),
+        ("kv", "Host", "CustomGPT.ai"),
+        ("kv", "Kernel", "AI Software & Product Engineer"),
+        ("kv", "Location", "Alexandria, Egypt"),
+        ("kv", "IDE", "Claude Code, VS Code, Zed"),
+        ("kv", "Shell", "zsh + Starship, cmux"),
+        ("blank",),
+        ("kv", "Languages.Programming", "TypeScript, JavaScript, Python"),
+        ("kv", "Languages.Computer", "HTML, CSS, JSON, YAML, SQL"),
+        ("kv", "Languages.Real", "Arabic, English"),
+        ("blank",),
+        ("kv", "Hobbies.Software", "AI Agents, Automation"),
+        ("kv", "Hobbies.Hardware", "Home Lab, Self-hosting"),
+        ("kv", "Avatar", "Leonhard Euler (1707–1783)"),
+        ("blank",),
+        ("header", "Contact", "- "),
+        ("kv", "Email.Personal", "kirollosateffawze@gmail.com"),
+        ("kv", "Email.Work", "kirollos@customgpt.ai"),
+        ("kv", "LinkedIn", "kirollos-atef-fawze"),
+        ("kv", "X", "@kiro_af"),
+        ("kv", "GitHub", "kirollosatef"),
+        ("blank",),
+        ("header", "GitHub Stats", "- "),
+        ("pair", ("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"), ("Stars", n(s["stars"]))),
+        ("pair", ("Commits", n(s["commits"])), ("Followers", n(s["followers"]))),
+        ("pair", ("Commits.PastYear", n(s["commits_year"])), ("Commits.PastWeek", n(s["commits_week"]), "PastWeek")),
+        ("loc", n(s["loc"]), n(s["add"]), n(s["del"])),
+    ]
+
+
 # A line is a list of (css class, text) spans. Dots pad key/value apart.
-def kv(key, value, width=WIDTH, prefix=". "):
+def kv(key, value, width, prefix=". "):
     keytxt = f"{key}:"
     dots = width - len(prefix) - len(keytxt) - len(value) - 2
-    return [("cc", prefix), ("key", keytxt), ("cc", " " + "." * max(dots, 1) + " "), ("value", value)]
+    if dots < 1:  # too long for this width: value goes right-aligned on its own line
+        return [[("cc", prefix), ("key", keytxt)],
+                [("cc", prefix + "." * (width - len(prefix) - len(value) - 1) + " "), ("value", value)]]
+    return [[("cc", prefix), ("key", keytxt), ("cc", " " + "." * dots + " "), ("value", value)]]
 
 
-def header(title, width=WIDTH, prefix=""):
-    rest = width - len(prefix) - len(title) - 1
-    return [("cc", prefix), ("title", title), ("cc", " " + "—" * (rest - 3) + "-—-")]
-
-
-def blank():
-    return [("cc", ". ")]
-
-
-def info_lines(s, today):
-    n = lambda v: f"{v:,}"
-    half = 36
-    repos_l = kv("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", half)
-    stars_r = kv("Stars", n(s["stars"]), WIDTH - half - 3, prefix="")
-    commits_l = kv("Commits", n(s["commits"]), half)
-    follow_r = kv("Followers", n(s["followers"]), WIDTH - half - 3, prefix="")
-    loc_key = ". Lines of Code:"
-    loc_tail = f" ( {n(s['add'])}++, {n(s['del'])}-- )"
-    loc_dots = WIDTH - len(loc_key) - len(n(s["loc"])) - len(loc_tail) - 2
-    return [
-        header("kiro@atef"),
-        kv("OS", "macOS 26 Tahoe, Linux, Windows"),
-        kv("Uptime", uptime(JOINED, today)),
-        kv("Host", "CustomGPT.ai"),
-        kv("Kernel", "AI Software & Product Engineer"),
-        kv("Location", "Alexandria, Egypt"),
-        kv("IDE", "Claude Code, VS Code, Zed"),
-        kv("Shell", "zsh + Starship, cmux"),
-        blank(),
-        kv("Languages.Programming", "TypeScript, JavaScript, Python"),
-        kv("Languages.Computer", "HTML, CSS, JSON, YAML, SQL"),
-        kv("Languages.Real", "Arabic, English"),
-        blank(),
-        kv("Hobbies.Software", "AI Agents, Automation"),
-        kv("Hobbies.Hardware", "Home Lab, Self-hosting"),
-        kv("Avatar", "Leonhard Euler (1707–1783)"),
-        blank(),
-        header("Contact", prefix="- "),
-        kv("Email.Personal", "kirollosateffawze@gmail.com"),
-        kv("Email.Work", "kirollos@customgpt.ai"),
-        kv("LinkedIn", "kirollos-atef-fawze"),
-        kv("X", "@kiro_af"),
-        kv("GitHub", "kirollosatef"),
-        blank(),
-        header("GitHub Stats", prefix="- "),
-        repos_l + [("cc", " | ")] + stars_r,
-        commits_l + [("cc", " | ")] + follow_r,
-        [("cc", ". "), ("key", "Lines of Code:"), ("cc", " " + "." * loc_dots + " "),
-         ("value", n(s["loc"])), ("cc", " ( "), ("add", f"{n(s['add'])}++"), ("cc", ", "),
-         ("del", f"{n(s['del'])}--"), ("cc", " )")],
-    ]
+def layout(rows, width):
+    lines = []
+    for kind, *a in rows:
+        if kind == "header":
+            title, prefix = a
+            rest = width - len(prefix) - len(title) - 1
+            lines.append([("cc", prefix), ("title", title), ("cc", " " + "—" * (rest - 3) + "-—-")])
+        elif kind == "blank":
+            lines.append([("cc", ". ")])
+        elif kind == "kv":
+            lines += kv(*a, width)
+        elif kind == "pair" and width >= 60:
+            half = 36
+            (k1, v1, *_), (k2, v2, *short) = a  # optional short key for the right column
+            right = kv(short[0] if short else k2, v2, width - half - 3, prefix="")[0]
+            lines.append(kv(k1, v1, half)[0] + [("cc", " | ")] + right)
+        elif kind == "pair":
+            for k, v, *_ in a:
+                lines += kv(k, v, width)
+        elif kind == "loc":
+            loc, add, dele = a
+            tail = [("cc", "( "), ("add", f"{add}++"), ("cc", ", "), ("del", f"{dele}--"), ("cc", " )")]
+            tail_len = sum(len(t) for _, t in tail)
+            dots = width - len(". Lines of Code:") - len(loc) - tail_len - 3
+            if dots >= 1:
+                lines.append([("cc", ". "), ("key", "Lines of Code:"), ("cc", " " + "." * dots + " "),
+                              ("value", loc), ("cc", " ")] + tail)
+            else:
+                lines += kv("Lines of Code", loc, width)
+                lines.append([("cc", ". " + " " * (width - 2 - tail_len))] + tail)
+    return lines
 
 
 THEMES = {
@@ -226,15 +258,25 @@ THEMES = {
 
 FONT, LH, CW = 16, 20, 9.6  # info text: font-size, line height, approx glyph width (px)
 ART_FONT, ART_LH, ART_CW = 11, 13, 6.6  # the portrait uses a smaller font for more detail
+PAD = 20
 
 
-def render(theme, art, eqs, lines):
+def render(theme, art, eqs, lines, width, stacked):
+    """stacked=False: portrait left, info right (desktop). True: portrait on top (phones)."""
     t = THEMES[theme]
-    art_cols = max(len(l) for l in art)
-    info_x = 20 + art_cols * ART_CW + 30
-    w = int(info_x + WIDTH * CW + 20)
-    h = max(30 + len(lines) * LH, 20 + len(art) * ART_LH) + 10
-    art_top = (h - len(art) * ART_LH) // 2 + ART_LH - 3
+    art_w = max(len(l) for l in art) * ART_CW
+    art_h = len(art) * ART_LH
+    info_w, info_h = width * CW, len(lines) * LH
+    if stacked:
+        w = int(max(art_w, info_w) + 2 * PAD)
+        art_x, art_top = (w - art_w) / 2, PAD + ART_LH - 3
+        info_x, info_y = (w - info_w) / 2, PAD + art_h + 30
+        h = int(info_y + info_h + PAD - 10)
+    else:
+        art_x, info_x, info_y = PAD, PAD + art_w + 30, 30
+        w = int(info_x + info_w + PAD)
+        h = max(30 + info_h, PAD + art_h) + 10
+        art_top = (h - art_h) // 2 + ART_LH - 3
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" '
         f'width="{w}px" height="{h}px" font-size="{FONT}px">',
@@ -245,10 +287,10 @@ def render(theme, art, eqs, lines):
         f".eq{{fill:{t['eq']};opacity:.55;font-style:italic;}}.hero{{opacity:1;font-weight:bold;font-size:14px;}}"
         f"text,tspan{{white-space:pre;}}</style>",
         f'<rect width="{w}px" height="{h}px" fill="{t["bg"]}" rx="15"/>',
-        f'<text x="20" y="{art_top}" fill="{t["fg"]}" font-size="{ART_FONT}px">',
+        f'<text x="{art_x:.1f}" y="{art_top}" fill="{t["fg"]}" font-size="{ART_FONT}px">',
     ]
     for i, l in enumerate(art):
-        out.append(f'<tspan x="20" y="{art_top + i * ART_LH}">{html.escape(l)}</tspan>')
+        out.append(f'<tspan x="{art_x:.1f}" y="{art_top + i * ART_LH}">{html.escape(l)}</tspan>')
     out.append("</text>")
     # Euler's equations float in the empty background around the portrait.
     # Each one gets its own x so wide glyphs (π, Σ, ²) cannot shift the others.
@@ -258,14 +300,13 @@ def render(theme, art, eqs, lines):
         for m in re.finditer(r"\S+(?: \S+)*", l):
             cls = "eq hero" if first else "eq"
             first = False
-            out.append(f'<tspan class="{cls}" x="{20 + m.start() * ART_CW:.1f}" '
+            out.append(f'<tspan class="{cls}" x="{art_x + m.start() * ART_CW:.1f}" '
                        f'y="{art_top + i * ART_LH}">{html.escape(m.group())}</tspan>')
     out.append("</text>")
-    out.append(f'<text x="{info_x:.0f}" y="30" fill="{t["fg"]}">')
+    out.append(f'<text x="{info_x:.0f}" y="{info_y}" fill="{t["fg"]}">')
     for i, spans in enumerate(lines):
-        y = 30 + i * LH
         parts = "".join(f'<tspan class="{c}">{html.escape(s)}</tspan>' for c, s in spans)
-        out.append(f'<tspan x="{info_x:.0f}" y="{y}">{parts}</tspan>')
+        out.append(f'<tspan x="{info_x:.0f}" y="{info_y + i * LH}">{parts}</tspan>')
     out.append("</text></svg>")
     return "\n".join(out)
 
@@ -274,11 +315,14 @@ def main():
     today = dt.datetime.now(dt.timezone(dt.timedelta(hours=2))).date()  # Cairo
     s = stats()
     print(s)
-    lines = info_lines(s, today)
+    rows = info_rows(s, today)
     read = lambda f: (ROOT / f).read_text().rstrip("\n").split("\n")
     eqs = read("ascii-eq.txt")
     for theme, art_file in (("dark", "ascii-art.txt"), ("light", "ascii-art-light.txt")):
-        (ROOT / f"{theme}_mode.svg").write_text(render(theme, read(art_file), eqs, lines))
+        art = read(art_file)
+        (ROOT / f"{theme}_mode.svg").write_text(render(theme, art, eqs, layout(rows, WIDTH), WIDTH, False))
+        (ROOT / f"{theme}_mobile.svg").write_text(
+            render(theme, art, eqs, layout(rows, MOBILE_WIDTH), MOBILE_WIDTH, True))
 
 
 if __name__ == "__main__":

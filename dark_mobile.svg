@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="500px" height="1293px" font-size="16px">
+<style>@font-face{src:local('Consolas'),local('Consolas Bold');font-family:'ConsolasFallback';font-display:swap;-webkit-size-adjust:109%;size-adjust:109%;}.key{fill:#ffa657;}.value{fill:#a5d6ff;}.add{fill:#3fb950;}.del{fill:#f85149;}.cc{fill:#616e7f;}.title{fill:#c9d1d9;}.eq{fill:#58a6ff;opacity:.55;font-style:italic;}.hero{opacity:1;font-weight:bold;font-size:14px;}text,tspan{white-space:pre;}</style>
+<rect width="500px" height="1293px" fill="#161b22" rx="15"/>
+<text x="32.2" y="30" fill="#c9d1d9" font-size="11px">
+<tspan x="32.2" y="30"></tspan>
+<tspan x="32.2" y="43"></tspan>
+<tspan x="32.2" y="56">                          ..@@@@k=...~.</tspan>
+<tspan x="32.2" y="69">                        ,~,.#@##@@@@+:,;,:~:=@j</tspan>
+<tspan x="32.2" y="82">                 .~@j =%j...;#@@#%#@@@*:+.....j:.</tspan>
+<tspan x="32.2" y="95">                ~:.%@@%xxx;=%kj@@@@j==..~,,~~,:~=;</tspan>
+<tspan x="32.2" y="108">               ~....,@#x*;*@@@@#@@@@@@k=.~*;;~=++++~</tspan>
+<tspan x="32.2" y="121">              :......+xjjxkk@@@@@##&amp;&amp;&amp;@@+..;+;;~=~~=~</tspan>
+<tspan x="32.2" y="134">              :...:*%kkjj%%&amp;%k#@@@@@&amp;&amp;%&amp;@x..,j%~~*=~=#~</tspan>
+<tspan x="32.2" y="147">                .;+=+**xjkjjx**+~+&amp;@@@@#@@@@:.=jx#++;#@@+</tspan>
+<tspan x="32.2" y="160">              ..:~=x%@@@@@@@@@@@@k*k@@@@@@@@@@~.:%@#~&amp;@@@&amp;k=</tspan>
+<tspan x="32.2" y="173">             ..:.,%&amp;@@@@@@@@@@@@@@@j:*&amp;@@@@@@@@#...+j#@@@@@@@</tspan>
+<tspan x="32.2" y="186">            ..,..=#%&amp;@@@@@@@@@@@@@@@#..=x@@%%%#@%.......;jx@@</tspan>
+<tspan x="32.2" y="199">            .:..,=#%#&amp;&amp;#@@@@@@@@@@@@@&amp;..;=@&amp;%xx@@x+;.......+.</tspan>
+<tspan x="32.2" y="212">            .,..,j@@@@#k@@@@@@@@@@@@@@k..;*=@@;.+j#@#%=~=,:,</tspan>
+<tspan x="32.2" y="225">            ,..~++=+k%%xk%jj%##@@@@@@@@=,,:*=%*~.,.,=+</tspan>
+<tspan x="32.2" y="238">           .,..,,::...@@#+~;*#&amp;@@@@@@@@k;:,~+~+j%x..</tspan>
+<tspan x="32.2" y="251">            ....,.~*.+@@@=~::&amp;kk#&amp;@@@@@#*~~;;**~=;.~:</tspan>
+<tspan x="32.2" y="264">             ..=+%@:+@@@@@xk&amp;@@@@@@@@@&amp;#kj=:;=+:*:.~x.</tspan>
+<tspan x="32.2" y="277">             ..+@#~*@@@@@@@@@@@@@@@@@@#%%&amp;#+*+~.*;..x=</tspan>
+<tspan x="32.2" y="290">              .:;:+@@@@@@%&amp;@@@@@@@@@&amp;%%#%kk@j=.;+..;j=</tspan>
+<tspan x="32.2" y="303">               .:.~;xkxxj&amp;x@@@@@@@&amp;%%###%@@%..:;...j@x</tspan>
+<tspan x="32.2" y="316">                ;:..x#@@@@@k#@@&amp;&amp;@&amp;##&amp;##*x+....:..;@@j</tspan>
+<tspan x="32.2" y="329">                .~:=#k%%%kkjxk@%&amp;@@&amp;#&amp;&amp;kxx.....;,;;*%+</tspan>
+<tspan x="32.2" y="342">                 :*;j@@@@&amp;&amp;&amp;%j#k##&amp;&amp;##kx@&amp;....:++jkj%j</tspan>
+<tspan x="32.2" y="355">                  ,:.+*j##&amp;@@%%%#%%kjxj&amp;@k.....;:+</tspan>
+<tspan x="32.2" y="368">                   ;xk#%######%kkjjjk#@@&amp;*==</tspan>
+<tspan x="32.2" y="381">                    :*%&amp;@&amp;#kjxxxjj%%%&amp;@@&amp;::@</tspan>
+<tspan x="32.2" y="394">                   ....,;~=+xjkkk%%%#@@&amp;*~&amp;@k</tspan>
+<tspan x="32.2" y="407">                  ,....~:..,=j&amp;&amp;###&amp;@@%x=k@%@.</tspan>
+<tspan x="32.2" y="420">                .,......~++**++k#&amp;#&amp;%k@&amp;&amp;@@@&amp;..</tspan>
+<tspan x="32.2" y="433">            ..............:+j@&amp;%kk%x=xkx@@@@;..*~:.</tspan>
+<tspan x="32.2" y="446">         ......:;:,..........,##j%&amp;j+j*++.;k,.,:jx+:..</tspan>
+<tspan x="32.2" y="459">     ..,:,......,;~~~,......;..@&amp;###k@@@@.~#~+:.;@x...,;.</tspan>
+<tspan x="32.2" y="472">  ......,~==;......~++=,......=@@@@@&amp;@@@#..+,xx:.%+.,,=kx=..</tspan>
+<tspan x="32.2" y="485">..,,......=x+*~....,jk+j~,.....,~&amp;@@@@@@&amp;~....kk,.;;;~jxjx..,..</tspan>
+<tspan x="32.2" y="498">.,:=*x=....;j%%j=*~,~@;+j*+~:.....@@@@&amp;&amp;@*.,...kx..+*+kxj*..,=;:,.</tspan>
+<tspan x="32.2" y="511">~*jjjjkj:...,jj*kj=:.*k:kk***+=....#@@@@@:.:,..=#x..kkkkkx:.;*+=~,</tspan>
+<tspan x="32.2" y="524">;+++jkjjk=,.,=j*jk*~:,j~;kj***x*:...*@@#@@j,.;&amp;&amp;k%..~&amp;%kj=;.*j***+</tspan>
+<tspan x="32.2" y="537">.;+~;~xjjk*;,.~jkjkx..+x.:k%x*xk%*...j%j#@@=.+%kjk:..j&amp;k*:..j*xx*x</tspan>
+<tspan x="32.2" y="550">..:*+:.+kk%k~,=*j%%&amp;x.;*..;%xjkk%#j...&amp;j*=..,#%kkj,..~%j=:.x#xxk*+</tspan>
+</text>
+<text font-size="11px">
+<tspan class="eq hero" x="38.8" y="43">e^(iπ) + 1 = 0</tspan>
+<tspan class="eq" x="395.2" y="69">e = Σ 1/n!</tspan>
+<tspan class="eq" x="38.8" y="95">γ ≈ 0.5772</tspan>
+<tspan class="eq" x="434.8" y="134">f(x)</tspan>
+<tspan class="eq" x="38.8" y="160">χ = 2 − 2g</tspan>
+<tspan class="eq" x="401.8" y="238">Σ 1/p = ∞</tspan>
+<tspan class="eq" x="38.8" y="264">i² = −1</tspan>
+<tspan class="eq" x="38.8" y="316">y&#x27; = f(x, y)</tspan>
+<tspan class="eq" x="58.6" y="355">e ≈ 2.71828</tspan>
+<tspan class="eq" x="38.8" y="381">Σ 1/n² = π²/6</tspan>
+<tspan class="eq" x="375.4" y="407">V − E + F = 2</tspan>
+</text>
+<text x="20" y="583" fill="#c9d1d9">
+<tspan x="20" y="583"><tspan class="cc"></tspan><tspan class="title">kiro@atef</tspan><tspan class="cc"> ———————————————————————————————————-—-</tspan></tspan>
+<tspan x="20" y="603"><tspan class="cc">. </tspan><tspan class="key">OS:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">macOS 26 Tahoe, Linux, Windows</tspan></tspan>
+<tspan x="20" y="623"><tspan class="cc">. </tspan><tspan class="key">Uptime:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">6 years, 0 months, 16 days</tspan></tspan>
+<tspan x="20" y="643"><tspan class="cc">. </tspan><tspan class="key">Host:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">CustomGPT.ai</tspan></tspan>
+<tspan x="20" y="663"><tspan class="cc">. </tspan><tspan class="key">Kernel:</tspan><tspan class="cc"> ....... </tspan><tspan class="value">AI Software &amp; Product Engineer</tspan></tspan>
+<tspan x="20" y="683"><tspan class="cc">. </tspan><tspan class="key">Location:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">Alexandria, Egypt</tspan></tspan>
+<tspan x="20" y="703"><tspan class="cc">. </tspan><tspan class="key">IDE:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">Claude Code, VS Code, Zed</tspan></tspan>
+<tspan x="20" y="723"><tspan class="cc">. </tspan><tspan class="key">Shell:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">zsh + Starship, cmux</tspan></tspan>
+<tspan x="20" y="743"><tspan class="cc">. </tspan></tspan>
+<tspan x="20" y="763"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming:</tspan></tspan>
+<tspan x="20" y="783"><tspan class="cc">. ............... </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan></tspan>
+<tspan x="20" y="803"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer:</tspan></tspan>
+<tspan x="20" y="823"><tspan class="cc">. ................... </tspan><tspan class="value">HTML, CSS, JSON, YAML, SQL</tspan></tspan>
+<tspan x="20" y="843"><tspan class="cc">. </tspan><tspan class="key">Languages.Real:</tspan><tspan class="cc"> .............. </tspan><tspan class="value">Arabic, English</tspan></tspan>
+<tspan x="20" y="863"><tspan class="cc">. </tspan></tspan>
+<tspan x="20" y="883"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">AI Agents, Automation</tspan></tspan>
+<tspan x="20" y="903"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">Home Lab, Self-hosting</tspan></tspan>
+<tspan x="20" y="923"><tspan class="cc">. </tspan><tspan class="key">Avatar:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">Leonhard Euler (1707–1783)</tspan></tspan>
+<tspan x="20" y="943"><tspan class="cc">. </tspan></tspan>
+<tspan x="20" y="963"><tspan class="cc">- </tspan><tspan class="title">Contact</tspan><tspan class="cc"> ———————————————————————————————————-—-</tspan></tspan>
+<tspan x="20" y="983"><tspan class="cc">. </tspan><tspan class="key">Email.Personal:</tspan><tspan class="cc"> .. </tspan><tspan class="value">kirollosateffawze@gmail.com</tspan></tspan>
+<tspan x="20" y="1003"><tspan class="cc">. </tspan><tspan class="key">Email.Work:</tspan><tspan class="cc"> ............ </tspan><tspan class="value">kirollos@customgpt.ai</tspan></tspan>
+<tspan x="20" y="1023"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ................ </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
+<tspan x="20" y="1043"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">@kiro_af</tspan></tspan>
+<tspan x="20" y="1063"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ......................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
+<tspan x="20" y="1083"><tspan class="cc">. </tspan></tspan>
+<tspan x="20" y="1103"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————-—-</tspan></tspan>
+<tspan x="20" y="1123"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> ................. </tspan><tspan class="value">57 {Contributed: 155}</tspan></tspan>
+<tspan x="20" y="1143"><tspan class="cc">. </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> .................................... </tspan><tspan class="value">64</tspan></tspan>
+<tspan x="20" y="1163"><tspan class="cc">. </tspan><tspan class="key">Commits:</tspan><tspan class="cc"> ............................... </tspan><tspan class="value">7,230</tspan></tspan>
+<tspan x="20" y="1183"><tspan class="cc">. </tspan><tspan class="key">Followers:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">53</tspan></tspan>
+<tspan x="20" y="1203"><tspan class="cc">. </tspan><tspan class="key">Commits.PastYear:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">6,077</tspan></tspan>
+<tspan x="20" y="1223"><tspan class="cc">. </tspan><tspan class="key">Commits.PastWeek:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">111</tspan></tspan>
+<tspan x="20" y="1243"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> .................... </tspan><tspan class="value">12,091,284</tspan></tspan>
+<tspan x="20" y="1263"><tspan class="cc">.                  </tspan><tspan class="cc">( </tspan><tspan class="add">17,542,806++</tspan><tspan class="cc">, </tspan><tspan class="del">5,451,522--</tspan><tspan class="cc"> )</tspan></tspan>
+</text></svg>
