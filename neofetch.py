@@ -199,9 +199,12 @@ def info_rows(s, today):
         ("kv", "GitHub", "kirollosatef"),
         ("blank",),
         ("header", "GitHub Stats", "- "),
-        ("pair", ("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"), ("Stars", n(s["stars"]))),
-        ("pair", ("Commits", n(s["commits"])), ("Followers", n(s["followers"]))),
-        ("pair", ("Commits.PastYear", n(s["commits_year"])), ("Commits.PastWeek", n(s["commits_week"]), "PastWeek")),
+        ("kv", "Followers", n(s["followers"])),
+        ("kv", "Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"),
+        ("kv", "Stars", n(s["stars"])),
+        ("kv", "Commits", n(s["commits"])),
+        ("kv", "Commits.PastYear", n(s["commits_year"])),
+        ("kv", "Commits.PastWeek", n(s["commits_week"])),
         ("loc", n(s["loc"]), n(s["add"]), n(s["del"])),
     ]
 
@@ -227,14 +230,6 @@ def layout(rows, width):
             lines.append([("cc", ". ")])
         elif kind == "kv":
             lines += kv(*a, width)
-        elif kind == "pair" and width >= 60:
-            half = 36
-            (k1, v1, *_), (k2, v2, *short) = a  # optional short key for the right column
-            right = kv(short[0] if short else k2, v2, width - half - 3, prefix="")[0]
-            lines.append(kv(k1, v1, half)[0] + [("cc", " | ")] + right)
-        elif kind == "pair":
-            for k, v, *_ in a:
-                lines += kv(k, v, width)
         elif kind == "loc":
             loc, add, dele = a
             tail = [("cc", "( "), ("add", f"{add}++"), ("cc", ", "), ("del", f"{dele}--"), ("cc", " )")]
