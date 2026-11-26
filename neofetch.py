@@ -20,9 +20,10 @@ USER = "kirollosatef"
 JOINED = dt.date(2020, 11, 10)  # GitHub account creation date
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache" / "loc.json"
-SEEN = ROOT / "cache" / "totals.json"  # best count seen with the full-access token
+SEEN = ROOT / "cache" / "totals.json"  # counts from the last run that had full access
 # GH_TOKEN (a personal token) also sees private work; GITHUB_TOKEN is the fallback if it expires.
 TOKENS = [t for t in (os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
+FULL_ACCESS = [True]  # flips to False once we fall back to GITHUB_TOKEN (public data only)
 
 WIDTH = 64  # characters on each info line, including the leading ". "
 
@@ -44,6 +45,7 @@ def gql(query, **variables):
                 raise
             print("GH_TOKEN rejected (expired?), falling back to GITHUB_TOKEN")
             TOKENS.pop(0)
+            FULL_ACCESS[0] = False
     if body.get("errors"):
         raise RuntimeError(body["errors"])
     return body["data"]
@@ -101,7 +103,7 @@ def stats():
                contributionTypes:[COMMIT,PULL_REQUEST,REPOSITORY,PULL_REQUEST_REVIEW]){totalCount} } }""",
         login=USER,
     )["user"]
-    owned = [r for r in repos(["OWNER"]) if not r["isPrivate"]]  # match the public profile count
+    owned = repos(["OWNER"])  # public + private (+ forks), like your own Repositories tab
     everything = repos(["OWNER", "COLLABORATOR", "ORGANIZATION_MEMBER"])
 
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
@@ -134,15 +136,16 @@ def stats():
     since = lambda days: (today - dt.timedelta(days=days)).isoformat()
     year_ago, week_ago = since(365), since(7)
 
-    # The fallback token only sees public work, so never let this drop below
-    # what the full-access token last saw.
-    seen = json.loads(SEEN.read_text()) if SEEN.exists() else {}
-    contributed = max(u["repositoriesContributedTo"]["totalCount"], seen.get("contributed", 0))
-    SEEN.write_text(json.dumps({"contributed": contributed}, indent=1) + "\n")
+    # Repo counts include private repos, which only the full-access token can see.
+    counts = {"repos": len(owned), "contributed": u["repositoriesContributedTo"]["totalCount"]}
+    if FULL_ACCESS[0]:
+        SEEN.write_text(json.dumps(counts, indent=1) + "\n")
+    elif SEEN.exists():  # the fallback token cannot see private repos: keep the last full counts
+        counts = json.loads(SEEN.read_text())
 
     return {
-        "repos": len(owned),
-        "contributed": contributed,
+        "repos": counts["repos"],
+        "contributed": counts["contributed"],
         "stars": sum(r["stargazerCount"] for r in owned),
         "followers": u["followers"]["totalCount"],
         "commits": len(dates),
