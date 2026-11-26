@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="1120px" height="620px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="1177px" height="620px" font-size="16px">
 <style>@font-face{src:local('Consolas'),local('Consolas Bold');font-family:'ConsolasFallback';font-display:swap;-webkit-size-adjust:109%;size-adjust:109%;}.key{fill:#ffa657;}.value{fill:#a5d6ff;}.add{fill:#3fb950;}.del{fill:#f85149;}.cc{fill:#616e7f;}.title{fill:#c9d1d9;}.eq{fill:#58a6ff;opacity:.55;font-style:italic;}.hero{opacity:1;font-weight:bold;font-size:14px;}text,tspan{white-space:pre;}</style>
-<rect width="1120px" height="620px" fill="#161b22" rx="15"/>
+<rect width="1177px" height="620px" fill="#161b22" rx="15"/>
 <text x="20.0" y="53" fill="#c9d1d9" font-size="11px">
 <tspan x="20.0" y="53"></tspan>
 <tspan x="20.0" y="66"></tspan>
@@ -58,33 +58,33 @@
 <tspan class="eq" x="363.2" y="430">V − E + F = 2</tspan>
 </text>
 <text x="486" y="30" fill="#c9d1d9">
-<tspan x="486" y="30"><tspan class="cc"></tspan><tspan class="title">kiro@atef</tspan><tspan class="cc"> ———————————————————————————————————————————————————-—-</tspan></tspan>
-<tspan x="486" y="50"><tspan class="cc">. </tspan><tspan class="key">OS:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">macOS 26 Tahoe, Linux, Windows</tspan></tspan>
-<tspan x="486" y="70"><tspan class="cc">. </tspan><tspan class="key">Uptime:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">6 years, 0 months, 16 days</tspan></tspan>
-<tspan x="486" y="90"><tspan class="cc">. </tspan><tspan class="key">Host:</tspan><tspan class="cc"> ........................................... </tspan><tspan class="value">CustomGPT.ai</tspan></tspan>
-<tspan x="486" y="110"><tspan class="cc">. </tspan><tspan class="key">Kernel:</tspan><tspan class="cc"> ....................... </tspan><tspan class="value">AI Software &amp; Product Engineer</tspan></tspan>
-<tspan x="486" y="130"><tspan class="cc">. </tspan><tspan class="key">Location:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">Alexandria, Egypt</tspan></tspan>
-<tspan x="486" y="150"><tspan class="cc">. </tspan><tspan class="key">IDE:</tspan><tspan class="cc"> ............................... </tspan><tspan class="value">Claude Code, VS Code, Zed</tspan></tspan>
-<tspan x="486" y="170"><tspan class="cc">. </tspan><tspan class="key">Shell:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">zsh + Starship, cmux</tspan></tspan>
+<tspan x="486" y="30"><tspan class="cc"></tspan><tspan class="title">kiro@atef</tspan><tspan class="cc"> —————————————————————————————————————————————————————————-—-</tspan></tspan>
+<tspan x="486" y="50"><tspan class="cc">. </tspan><tspan class="key">OS:</tspan><tspan class="cc"> ................................. </tspan><tspan class="value">macOS 26 Tahoe, Linux, Windows</tspan></tspan>
+<tspan x="486" y="70"><tspan class="cc">. </tspan><tspan class="key">Uptime:</tspan><tspan class="cc"> ................................. </tspan><tspan class="value">6 years, 0 months, 16 days</tspan></tspan>
+<tspan x="486" y="90"><tspan class="cc">. </tspan><tspan class="key">Host:</tspan><tspan class="cc"> ................................................. </tspan><tspan class="value">CustomGPT.ai</tspan></tspan>
+<tspan x="486" y="110"><tspan class="cc">. </tspan><tspan class="key">Kernel:</tspan><tspan class="cc"> ............................. </tspan><tspan class="value">AI Software &amp; Product Engineer</tspan></tspan>
+<tspan x="486" y="130"><tspan class="cc">. </tspan><tspan class="key">Location:</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">Alexandria, Egypt</tspan></tspan>
+<tspan x="486" y="150"><tspan class="cc">. </tspan><tspan class="key">IDE:</tspan><tspan class="cc"> ..................................... </tspan><tspan class="value">Claude Code, VS Code, Zed</tspan></tspan>
+<tspan x="486" y="170"><tspan class="cc">. </tspan><tspan class="key">Shell:</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">zsh + Starship, cmux</tspan></tspan>
 <tspan x="486" y="190"><tspan class="cc">. </tspan></tspan>
-<tspan x="486" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming:</tspan><tspan class="cc"> ........ </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan></tspan>
-<tspan x="486" y="230"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">HTML, CSS, JSON, YAML, SQL</tspan></tspan>
-<tspan x="486" y="250"><tspan class="cc">. </tspan><tspan class="key">Languages.Real:</tspan><tspan class="cc"> .............................. </tspan><tspan class="value">Arabic, English</tspan></tspan>
+<tspan x="486" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming:</tspan><tspan class="cc"> .............. </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan></tspan>
+<tspan x="486" y="230"><tspan class="cc">. </tspan><tspan class="key">Languages.Computer:</tspan><tspan class="cc"> ..................... </tspan><tspan class="value">HTML, CSS, JSON, YAML, SQL</tspan></tspan>
+<tspan x="486" y="250"><tspan class="cc">. </tspan><tspan class="key">Languages.Real:</tspan><tspan class="cc"> .................................... </tspan><tspan class="value">Arabic, English</tspan></tspan>
 <tspan x="486" y="270"><tspan class="cc">. </tspan></tspan>
-<tspan x="486" y="290"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">AI Agents, Automation</tspan></tspan>
-<tspan x="486" y="310"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware:</tspan><tspan class="cc"> ..................... </tspan><tspan class="value">Home Lab, Self-hosting</tspan></tspan>
-<tspan x="486" y="330"><tspan class="cc">. </tspan><tspan class="key">Avatar:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">Leonhard Euler (1707–1783)</tspan></tspan>
+<tspan x="486" y="290"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Software:</tspan><tspan class="cc"> ............................ </tspan><tspan class="value">AI Agents, Automation</tspan></tspan>
+<tspan x="486" y="310"><tspan class="cc">. </tspan><tspan class="key">Hobbies.Hardware:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">Home Lab, Self-hosting</tspan></tspan>
+<tspan x="486" y="330"><tspan class="cc">. </tspan><tspan class="key">Avatar:</tspan><tspan class="cc"> ................................. </tspan><tspan class="value">Leonhard Euler (1707–1783)</tspan></tspan>
 <tspan x="486" y="350"><tspan class="cc">. </tspan></tspan>
-<tspan x="486" y="370"><tspan class="cc">- </tspan><tspan class="title">Contact</tspan><tspan class="cc"> ———————————————————————————————————————————————————-—-</tspan></tspan>
-<tspan x="486" y="390"><tspan class="cc">. </tspan><tspan class="key">Email.Personal:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">kirollosateffawze@gmail.com</tspan></tspan>
-<tspan x="486" y="410"><tspan class="cc">. </tspan><tspan class="key">Email.Work:</tspan><tspan class="cc"> ............................ </tspan><tspan class="value">kirollos@customgpt.ai</tspan></tspan>
-<tspan x="486" y="430"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
-<tspan x="486" y="450"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="value">@kiro_af</tspan></tspan>
-<tspan x="486" y="470"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ......................................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
+<tspan x="486" y="370"><tspan class="cc">- </tspan><tspan class="title">Contact</tspan><tspan class="cc"> —————————————————————————————————————————————————————————-—-</tspan></tspan>
+<tspan x="486" y="390"><tspan class="cc">. </tspan><tspan class="key">Email.Personal:</tspan><tspan class="cc"> ........................ </tspan><tspan class="value">kirollosateffawze@gmail.com</tspan></tspan>
+<tspan x="486" y="410"><tspan class="cc">. </tspan><tspan class="key">Email.Work:</tspan><tspan class="cc"> .................................. </tspan><tspan class="value">kirollos@customgpt.ai</tspan></tspan>
+<tspan x="486" y="430"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ...................................... </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
+<tspan x="486" y="450"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> ........................................................ </tspan><tspan class="value">@kiro_af</tspan></tspan>
+<tspan x="486" y="470"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ............................................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
 <tspan x="486" y="490"><tspan class="cc">. </tspan></tspan>
-<tspan x="486" y="510"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————————————————————-—-</tspan></tspan>
-<tspan x="486" y="530"><tspan class="cc">. </tspan><tspan class="key">Followers:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">53</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Commits.PastWeek:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">119</tspan></tspan>
-<tspan x="486" y="550"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> .. </tspan><tspan class="value">154 {Contributed: 155}</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Commits.PastYear:</tspan><tspan class="cc"> ... </tspan><tspan class="value">6,085</tspan></tspan>
-<tspan x="486" y="570"><tspan class="cc">. </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">64</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Commits:</tspan><tspan class="cc"> ............ </tspan><tspan class="value">7,238</tspan></tspan>
-<tspan x="486" y="590"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">12,098,932</tspan><tspan class="cc"> </tspan><tspan class="cc">( </tspan><tspan class="add">17,551,225++</tspan><tspan class="cc">, </tspan><tspan class="del">5,452,293--</tspan><tspan class="cc"> )</tspan></tspan>
+<tspan x="486" y="510"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ————————————————————————————————————————————————————-—-</tspan></tspan>
+<tspan x="486" y="530"><tspan class="cc">. </tspan><tspan class="key">Followers:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">53</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Contributions.PastWeek:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">327</tspan></tspan>
+<tspan x="486" y="550"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> .. </tspan><tspan class="value">154 {Contributed: 155}</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Contributions.PastYear:</tspan><tspan class="cc"> .. </tspan><tspan class="value">10,013</tspan></tspan>
+<tspan x="486" y="570"><tspan class="cc">. </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">65</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Contributions:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">12,037</tspan></tspan>
+<tspan x="486" y="590"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> ............ </tspan><tspan class="value">12,098,932</tspan><tspan class="cc"> </tspan><tspan class="cc">( </tspan><tspan class="add">17,551,225++</tspan><tspan class="cc">, </tspan><tspan class="del">5,452,293--</tspan><tspan class="cc"> )</tspan></tspan>
 </text></svg>

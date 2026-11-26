@@ -25,7 +25,7 @@ SEEN = ROOT / "cache" / "totals.json"  # counts from the last run that had full 
 TOKENS = [t for t in (os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
 FULL_ACCESS = [True]  # flips to False once we fall back to GITHUB_TOKEN (public data only)
 
-WIDTH = 64  # characters on each info line, including the leading ". "
+WIDTH = 70  # characters on each info line, including the leading ". "
 
 
 # ---------------------------------------------------------------- GitHub API
@@ -69,10 +69,9 @@ def repos(affiliations):
 
 
 def my_history(name_with_owner, author_id):
-    """Additions, deletions and commit dates authored by me on the default branch."""
+    """Additions and deletions authored by me on the default branch."""
     owner, name = name_with_owner.split("/")
     add = dele = 0
-    dates = []
     cursor = None
     while True:
         d = gql(
@@ -80,20 +79,38 @@ def my_history(name_with_owner, author_id):
               repository(owner:$o,name:$n){ defaultBranchRef{ target{ ... on Commit{
                 history(first:100, after:$after, author:{id:$id}){
                   totalCount pageInfo{hasNextPage endCursor}
-                  nodes{ additions deletions committedDate } } } } } } }""",
+                  nodes{ additions deletions } } } } } } }""",
             o=owner, n=name, id=author_id, after=cursor,
         )
         ref = (d["repository"] or {}).get("defaultBranchRef")
         if not ref:
-            return 0, 0, []
+            return 0, 0
         h = ref["target"]["history"]
         for c in h["nodes"]:
             add += c["additions"]
             dele += c["deletions"]
-            dates.append(c["committedDate"][:10])
         if not h["pageInfo"]["hasNextPage"]:
-            return add, dele, sorted(dates)
+            return add, dele
         cursor = h["pageInfo"]["endCursor"]
+
+
+def contributions(start=None, end=None):
+    """Contributions as the profile graph counts them (commits, PRs, reviews, issues, new repos,
+    private ones included). No dates = the same "last year" window as the profile."""
+    if start is None:
+        return gql("""query($login:String!){ user(login:$login){ contributionsCollection{
+                        contributionCalendar{ totalContributions } } } }""", login=USER
+                   )["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+    total = 0
+    while start < end:  # the API takes at most one year per query
+        stop = min(end, start + dt.timedelta(days=365))
+        total += gql(
+            """query($login:String!,$from:DateTime!,$to:DateTime!){ user(login:$login){
+                 contributionsCollection(from:$from, to:$to){ contributionCalendar{ totalContributions } } } }""",
+            login=USER, **{"from": start.isoformat(), "to": stop.isoformat()},
+        )["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+        start = stop
+    return total
 
 
 def stats():
@@ -107,6 +124,8 @@ def stats():
     everything = repos(["OWNER", "COLLABORATOR", "ORGANIZATION_MEMBER"])
 
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    for hit in cache.values():
+        hit.pop("dates", None)  # older cache format stored commit dates
     for r in everything:
         if r["isFork"] or not r["defaultBranchRef"]:
             continue
@@ -116,25 +135,22 @@ def stats():
         hit = cache.get(key)
         if not hit or hit["oid"] != oid:
             try:
-                a, d, dates = my_history(r["nameWithOwner"], u["id"])
+                a, d = my_history(r["nameWithOwner"], u["id"])
             except Exception as e:  # one broken repo should not kill the card
                 print(f"skip {key}: {e}")
                 continue
-            cache[key] = {"oid": oid, "add": a, "del": d, "dates": dates}
+            cache[key] = {"oid": oid, "add": a, "del": d}
     # Sum every repo ever seen, so repos the CI token cannot list keep their last count.
     add = dele = 0
-    dates = []
     for hit in cache.values():
         add, dele = add + hit["add"], dele + hit["del"]
-        dates += hit.get("dates", [])
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
 
-    # Commit dates are cached per repo, so the rolling windows move forward every day
-    # even for repos the CI token cannot see.
-    today = dt.datetime.now(dt.timezone.utc).date()
-    since = lambda days: (today - dt.timedelta(days=days)).isoformat()
-    year_ago, week_ago = since(365), since(7)
+    # The contribution graph is public (private work shows as anonymous counts),
+    # so these stay correct even on the public-only fallback token.
+    now = dt.datetime.now(dt.timezone.utc)
+    joined = dt.datetime.combine(JOINED, dt.time(), dt.timezone.utc)
 
     # Repo counts include private repos, which only the full-access token can see.
     counts = {"repos": len(owned), "contributed": u["repositoriesContributedTo"]["totalCount"]}
@@ -148,9 +164,9 @@ def stats():
         "contributed": counts["contributed"],
         "stars": sum(r["stargazerCount"] for r in owned),
         "followers": u["followers"]["totalCount"],
-        "commits": len(dates),
-        "commits_year": sum(d > year_ago for d in dates),
-        "commits_week": sum(d > week_ago for d in dates),
+        "contrib": contributions(joined, now),
+        "contrib_year": contributions(),
+        "contrib_week": contributions(now - dt.timedelta(days=7), now),
         "loc": add - dele,
         "add": add,
         "del": dele,
@@ -207,9 +223,9 @@ def info_rows(s, today):
          [("Followers", n(s["followers"])),
           ("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"),
           ("Stars", n(s["stars"]))],
-         [("Commits.PastWeek", n(s["commits_week"])),
-          ("Commits.PastYear", n(s["commits_year"])),
-          ("Commits", n(s["commits"]))]),
+         [("Contributions.PastWeek", n(s["contrib_week"])),
+          ("Contributions.PastYear", n(s["contrib_year"])),
+          ("Contributions", n(s["contrib"]))]),
         ("loc", n(s["loc"]), n(s["add"]), n(s["del"])),
     ]
 
