@@ -13,3 +13,10 @@
     <img alt="Kiro Atef's GitHub profile README" src="light_mode.svg">
   </picture>
 </a>
+
+<p align="center">
+  <a href="mailto:kirollosateffawze@gmail.com"><code>✉ kirollosateffawze@gmail.com</code></a> ·
+  <a href="mailto:kirollos@customgpt.ai"><code>✉ kirollos@customgpt.ai</code></a> ·
+  <a href="https://www.linkedin.com/in/kirollos-atef-fawze"><code>in/kirollos-atef-fawze</code></a> ·
+  <a href="https://x.com/kiro_af"><code>𝕏 @kiro_af</code></a>
+</p>
