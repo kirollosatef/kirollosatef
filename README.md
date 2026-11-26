@@ -5,5 +5,3 @@
     <img alt="Kiro Atef's GitHub profile README" src="dark_mode.svg">
   </picture>
 </a>
-
-![Metrics](https://github.com/kirollosatef/kirollosatef/blob/main/github-metrics.svg)
