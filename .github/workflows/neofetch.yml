@@ -1,0 +1,28 @@
+name: Neofetch card
+on:
+  schedule: [{ cron: "0 4 * * *" }]   # daily, 06:00 Cairo
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [neofetch.py, ascii-art.txt, .github/workflows/neofetch.yml]
+permissions:
+  contents: write
+concurrency: { group: neofetch, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python neofetch.py
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg cache/loc.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update neofetch card [skip ci]"
+          git pull --rebase && git push
