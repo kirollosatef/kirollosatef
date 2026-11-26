@@ -18,6 +18,7 @@ jobs:
       - run: python neofetch.py
         env:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

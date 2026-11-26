@@ -12,6 +12,7 @@ import html
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -19,20 +20,29 @@ USER = "kirollosatef"
 JOINED = dt.date(2020, 11, 10)  # GitHub account creation date
 ROOT = Path(__file__).parent
 CACHE = ROOT / "cache" / "loc.json"
-TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+# GH_TOKEN (a personal token) also sees private work; GITHUB_TOKEN is the fallback if it expires.
+TOKENS = [t for t in (os.environ.get("GH_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
 
 WIDTH = 64  # characters on each info line, including the leading ". "
 
 
 # ---------------------------------------------------------------- GitHub API
 def gql(query, **variables):
-    req = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps({"query": query, "variables": variables}).encode(),
-        headers={"Authorization": f"bearer {TOKEN}", "User-Agent": "neofetch-card"},
-    )
-    with urllib.request.urlopen(req, timeout=60) as r:
-        body = json.load(r)
+    while True:
+        req = urllib.request.Request(
+            "https://api.github.com/graphql",
+            data=json.dumps({"query": query, "variables": variables}).encode(),
+            headers={"Authorization": f"bearer {TOKENS[0]}", "User-Agent": "neofetch-card"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = json.load(r)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 401 or len(TOKENS) == 1:
+                raise
+            print("GH_TOKEN rejected (expired?), falling back to GITHUB_TOKEN")
+            TOKENS.pop(0)
     if body.get("errors"):
         raise RuntimeError(body["errors"])
     return body["data"]
