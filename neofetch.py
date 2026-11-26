@@ -199,12 +199,14 @@ def info_rows(s, today):
         ("kv", "GitHub", "kirollosatef"),
         ("blank",),
         ("header", "GitHub Stats", "- "),
-        ("kv", "Followers", n(s["followers"])),
-        ("kv", "Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"),
-        ("kv", "Stars", n(s["stars"])),
-        ("kv", "Commits.PastWeek", n(s["commits_week"])),
-        ("kv", "Commits.PastYear", n(s["commits_year"])),
-        ("kv", "Commits", n(s["commits"])),
+        # Two columns side by side on desktop, one after the other on phones.
+        ("cols",
+         [("Followers", n(s["followers"])),
+          ("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"),
+          ("Stars", n(s["stars"]))],
+         [("Commits.PastWeek", n(s["commits_week"])),
+          ("Commits.PastYear", n(s["commits_year"])),
+          ("Commits", n(s["commits"]))]),
         ("loc", n(s["loc"]), n(s["add"]), n(s["del"])),
     ]
 
@@ -230,6 +232,14 @@ def layout(rows, width):
             lines.append([("cc", ". ")])
         elif kind == "kv":
             lines += kv(*a, width)
+        elif kind == "cols" and width >= 60:
+            left_w = 34
+            for (k1, v1), (k2, v2) in zip(*a):
+                lines.append(kv(k1, v1, left_w)[0] + [("cc", " | ")]
+                             + kv(k2, v2, width - left_w - 3, prefix="")[0])
+        elif kind == "cols":
+            for k, v in a[0] + a[1]:
+                lines += kv(k, v, width)
         elif kind == "loc":
             loc, add, dele = a
             tail = [("cc", "( "), ("add", f"{add}++"), ("cc", ", "), ("del", f"{dele}--"), ("cc", " )")]
