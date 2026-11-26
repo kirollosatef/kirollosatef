@@ -202,6 +202,8 @@ def info_lines(s, today):
         kv("Avatar", "Leonhard Euler (1707–1783)"),
         blank(),
         header("Contact", prefix="- "),
+        kv("Email.Personal", "kirollosateffawze@gmail.com"),
+        kv("Email.Work", "kirollos@customgpt.ai"),
         kv("LinkedIn", "kirollos-atef-fawze"),
         kv("X", "@kiro_af"),
         kv("GitHub", "kirollosatef"),

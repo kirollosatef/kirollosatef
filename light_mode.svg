@@ -1,61 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="1120px" height="563px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,Menlo,monospace" width="1120px" height="600px" font-size="16px">
 <style>@font-face{src:local('Consolas'),local('Consolas Bold');font-family:'ConsolasFallback';font-display:swap;-webkit-size-adjust:109%;size-adjust:109%;}.key{fill:#953800;}.value{fill:#0a3069;}.add{fill:#1a7f37;}.del{fill:#cf222e;}.cc{fill:#c2cfde;}.title{fill:#24292f;}.eq{fill:#0969da;opacity:.55;font-style:italic;}.hero{opacity:1;font-weight:bold;font-size:14px;}text,tspan{white-space:pre;}</style>
-<rect width="1120px" height="563px" fill="#f6f8fa" rx="15"/>
-<text x="20" y="25" fill="#24292f" font-size="11px">
-<tspan x="20" y="25"></tspan>
-<tspan x="20" y="38"></tspan>
-<tspan x="20" y="51">                          @@....;x&amp;@&amp;j&amp;</tspan>
-<tspan x="20" y="64">                        #j#@,.,,....*%#k#%j%x.~</tspan>
-<tspan x="20" y="77">                 @j.~ x:~&amp;@@k,..,:,...+%*@@@@&amp;~%@</tspan>
-<tspan x="20" y="90">                j%@:..:===kx:;~....~xx@@j##jj#%jxk</tspan>
-<tspan x="20" y="103">               j@&amp;@@#.,=+k+....,......;x@j+kkjx****j</tspan>
-<tspan x="20" y="116">              %@@@@@@*=~~=;;.....,,.....*@@k*kkjxjjxj</tspan>
-<tspan x="20" y="129">              %@@@%+:;;~~::.:;,.......:..=@@#~:jj+xjx,j</tspan>
-<tspan x="20" y="142">                @k*x*++=~;~~=++*j*.....,....%@x~=,**k,..*</tspan>
-<tspan x="20" y="155">              @@%jx=:............;+;..........j@%:.,j.....;x</tspan>
-<tspan x="20" y="168">             @@%&amp;#:................~%+.........,@@&amp;*~,.......</tspan>
-<tspan x="20" y="181">            @@#@@x,:................,@@x=..:::,.:&amp;@@@@@@k~=..</tspan>
-<tspan x="20" y="194">            @%@@#x,:,..,..............@@kx..:==..=*k&amp;@@@@@@*&amp;</tspan>
-<tspan x="20" y="207">            &amp;#@@#~....,;..............;@&amp;k+x..k@*~,.,:xjx#%#</tspan>
-<tspan x="20" y="220">            #@@j**x*;::=;:~~:,,........x##%+x:+j&amp;#@#x*</tspan>
-<tspan x="20" y="233">           @#@@##%%@@@..,*jk+,.........;k%#j*j*~:=@@</tspan>
-<tspan x="20" y="246">            &amp;&amp;@&amp;#@j+@*...xj%%.;;,......,+jjkk++jxk@j%</tspan>
-<tspan x="20" y="259">             @@x*:.%*.....=;...........,;~x%kx*%+%@j=@</tspan>
-<tspan x="20" y="272">             @@*.,j+..................,::.,*+*j@+k@@=x</tspan>
-<tspan x="20" y="285">              @%k%*......:...........::,:;;.~x@k*@@k~x</tspan>
-<tspan x="20" y="298">               @%&amp;jk=;==~.=........::,,,:..:&amp;@%k&amp;@@~.=</tspan>
-<tspan x="20" y="311">                k%@@=,.....;,......,,.,,+=*@@@@%&amp;@k..~</tspan>
-<tspan x="20" y="324">                @j%x,;:::;;~=;.:....,..;==@@&amp;@@k#kk+:*</tspan>
-<tspan x="20" y="337">                 %+k~.......:~,;,,..,,;=..@@@@%**~;~:~</tspan>
-<tspan x="20" y="350">                  #%@*+~,,...:::,::;~=~..;&amp;@@@&amp;k%*</tspan>
-<tspan x="20" y="363">                   k=;,:,,,,,,:;;~~~;,...+xx</tspan>
-<tspan x="20" y="376">                    %+:...,;~===~~:::....%%.</tspan>
-<tspan x="20" y="389">                   &amp;@@@#kjx*=~;;;:::,...+j..;</tspan>
-<tspan x="20" y="402">                  #&amp;@@@j%&amp;@#x~..,,,...:=x;.:.@</tspan>
-<tspan x="20" y="415">                @#&amp;@@@@@j**++**;,.,.:;.......@&amp;</tspan>
-<tspan x="20" y="428">            @@@@@@@@@@@@@@%*~..:;;:=x=;=....k@@+j%&amp;</tspan>
-<tspan x="20" y="441">         @@@@@@%k%#&amp;@@@@@@@@@#,,~:.~*~+**@k;#@#%~=*%&amp;@</tspan>
-<tspan x="20" y="454">     @@#%#&amp;@@@@@#kjjj#@@@@@@k@@..,,,;....@j,j*%@k.=&amp;@&amp;#k@</tspan>
-<tspan x="20" y="467">  @@@@@@#jxxk@@@@@@j**x#@@@@@@x.........,&amp;&amp;*#==%&amp;:*@##x;=x@@</tspan>
-<tspan x="20" y="480">@@##&amp;@@@@@x=*+j&amp;&amp;@@#~;*~j#&amp;@@@@#j........j@@@&amp;;;#&amp;kkkj~=~=&amp;&amp;#&amp;@</tspan>
-<tspan x="20" y="493">&amp;#%x+=x@@@@k~::~x+j#j.k*~+*j%&amp;@@@@.......+&amp;#@@@;=&amp;@*+*;=~+@@#xk%#@</tspan>
-<tspan x="20" y="506">j+~~~~;~%@@@#~~+;~x%@+;%;;+++*x@@@@,.....%@%#&amp;@x,=@@;;;;;=%@k+*xj#</tspan>
-<tspan x="20" y="519">k***~;~~;x#&amp;#x~+~;+j%#~jk;~+++=+%@@@+..,..~#&amp;k..;:@@j.:;~xk@+~+++*</tspan>
-<tspan x="20" y="532">@k*jkj=~~;+k#&amp;j~;~;=&amp;&amp;*=&amp;%;:=+=;:+&amp;@@~:~,..x@*:;~;%@@~.;+%@@~+==+=</tspan>
-<tspan x="20" y="545">&amp;@%+*%@*;;:;j#x+~::.=&amp;k+&amp;@k:=~;;:,~@@&amp;.~+x@@#,:;;~#@@j:~x%&amp;=,==;+*</tspan>
+<rect width="1120px" height="600px" fill="#f6f8fa" rx="15"/>
+<text x="20" y="43" fill="#24292f" font-size="11px">
+<tspan x="20" y="43"></tspan>
+<tspan x="20" y="56"></tspan>
+<tspan x="20" y="69">                          @@....;x&amp;@&amp;j&amp;</tspan>
+<tspan x="20" y="82">                        #j#@,.,,....*%#k#%j%x.~</tspan>
+<tspan x="20" y="95">                 @j.~ x:~&amp;@@k,..,:,...+%*@@@@&amp;~%@</tspan>
+<tspan x="20" y="108">                j%@:..:===kx:;~....~xx@@j##jj#%jxk</tspan>
+<tspan x="20" y="121">               j@&amp;@@#.,=+k+....,......;x@j+kkjx****j</tspan>
+<tspan x="20" y="134">              %@@@@@@*=~~=;;.....,,.....*@@k*kkjxjjxj</tspan>
+<tspan x="20" y="147">              %@@@%+:;;~~::.:;,.......:..=@@#~:jj+xjx,j</tspan>
+<tspan x="20" y="160">                @k*x*++=~;~~=++*j*.....,....%@x~=,**k,..*</tspan>
+<tspan x="20" y="173">              @@%jx=:............;+;..........j@%:.,j.....;x</tspan>
+<tspan x="20" y="186">             @@%&amp;#:................~%+.........,@@&amp;*~,.......</tspan>
+<tspan x="20" y="199">            @@#@@x,:................,@@x=..:::,.:&amp;@@@@@@k~=..</tspan>
+<tspan x="20" y="212">            @%@@#x,:,..,..............@@kx..:==..=*k&amp;@@@@@@*&amp;</tspan>
+<tspan x="20" y="225">            &amp;#@@#~....,;..............;@&amp;k+x..k@*~,.,:xjx#%#</tspan>
+<tspan x="20" y="238">            #@@j**x*;::=;:~~:,,........x##%+x:+j&amp;#@#x*</tspan>
+<tspan x="20" y="251">           @#@@##%%@@@..,*jk+,.........;k%#j*j*~:=@@</tspan>
+<tspan x="20" y="264">            &amp;&amp;@&amp;#@j+@*...xj%%.;;,......,+jjkk++jxk@j%</tspan>
+<tspan x="20" y="277">             @@x*:.%*.....=;...........,;~x%kx*%+%@j=@</tspan>
+<tspan x="20" y="290">             @@*.,j+..................,::.,*+*j@+k@@=x</tspan>
+<tspan x="20" y="303">              @%k%*......:...........::,:;;.~x@k*@@k~x</tspan>
+<tspan x="20" y="316">               @%&amp;jk=;==~.=........::,,,:..:&amp;@%k&amp;@@~.=</tspan>
+<tspan x="20" y="329">                k%@@=,.....;,......,,.,,+=*@@@@%&amp;@k..~</tspan>
+<tspan x="20" y="342">                @j%x,;:::;;~=;.:....,..;==@@&amp;@@k#kk+:*</tspan>
+<tspan x="20" y="355">                 %+k~.......:~,;,,..,,;=..@@@@%**~;~:~</tspan>
+<tspan x="20" y="368">                  #%@*+~,,...:::,::;~=~..;&amp;@@@&amp;k%*</tspan>
+<tspan x="20" y="381">                   k=;,:,,,,,,:;;~~~;,...+xx</tspan>
+<tspan x="20" y="394">                    %+:...,;~===~~:::....%%.</tspan>
+<tspan x="20" y="407">                   &amp;@@@#kjx*=~;;;:::,...+j..;</tspan>
+<tspan x="20" y="420">                  #&amp;@@@j%&amp;@#x~..,,,...:=x;.:.@</tspan>
+<tspan x="20" y="433">                @#&amp;@@@@@j**++**;,.,.:;.......@&amp;</tspan>
+<tspan x="20" y="446">            @@@@@@@@@@@@@@%*~..:;;:=x=;=....k@@+j%&amp;</tspan>
+<tspan x="20" y="459">         @@@@@@%k%#&amp;@@@@@@@@@#,,~:.~*~+**@k;#@#%~=*%&amp;@</tspan>
+<tspan x="20" y="472">     @@#%#&amp;@@@@@#kjjj#@@@@@@k@@..,,,;....@j,j*%@k.=&amp;@&amp;#k@</tspan>
+<tspan x="20" y="485">  @@@@@@#jxxk@@@@@@j**x#@@@@@@x.........,&amp;&amp;*#==%&amp;:*@##x;=x@@</tspan>
+<tspan x="20" y="498">@@##&amp;@@@@@x=*+j&amp;&amp;@@#~;*~j#&amp;@@@@#j........j@@@&amp;;;#&amp;kkkj~=~=&amp;&amp;#&amp;@</tspan>
+<tspan x="20" y="511">&amp;#%x+=x@@@@k~::~x+j#j.k*~+*j%&amp;@@@@.......+&amp;#@@@;=&amp;@*+*;=~+@@#xk%#@</tspan>
+<tspan x="20" y="524">j+~~~~;~%@@@#~~+;~x%@+;%;;+++*x@@@@,.....%@%#&amp;@x,=@@;;;;;=%@k+*xj#</tspan>
+<tspan x="20" y="537">k***~;~~;x#&amp;#x~+~;+j%#~jk;~+++=+%@@@+..,..~#&amp;k..;:@@j.:;~xk@+~+++*</tspan>
+<tspan x="20" y="550">@k*jkj=~~;+k#&amp;j~;~;=&amp;&amp;*=&amp;%;:=+=;:+&amp;@@~:~,..x@*:;~;%@@~.;+%@@~+==+=</tspan>
+<tspan x="20" y="563">&amp;@%+*%@*;;:;j#x+~::.=&amp;k+&amp;@k:=~;;:,~@@&amp;.~+x@@#,:;;~#@@j:~x%&amp;=,==;+*</tspan>
 </text>
 <text font-size="11px">
-<tspan class="eq hero" x="26.6" y="38">e^(iπ) + 1 = 0</tspan>
-<tspan class="eq" x="383.0" y="64">e = Σ 1/n!</tspan>
-<tspan class="eq" x="26.6" y="90">γ ≈ 0.5772</tspan>
-<tspan class="eq" x="422.6" y="129">f(x)</tspan>
-<tspan class="eq" x="26.6" y="155">χ = 2 − 2g</tspan>
-<tspan class="eq" x="389.6" y="233">Σ 1/p = ∞</tspan>
-<tspan class="eq" x="26.6" y="259">i² = −1</tspan>
-<tspan class="eq" x="26.6" y="311">y&#x27; = f(x, y)</tspan>
-<tspan class="eq" x="46.4" y="350">e ≈ 2.71828</tspan>
-<tspan class="eq" x="26.6" y="376">Σ 1/n² = π²/6</tspan>
-<tspan class="eq" x="363.2" y="402">V − E + F = 2</tspan>
+<tspan class="eq hero" x="26.6" y="56">e^(iπ) + 1 = 0</tspan>
+<tspan class="eq" x="383.0" y="82">e = Σ 1/n!</tspan>
+<tspan class="eq" x="26.6" y="108">γ ≈ 0.5772</tspan>
+<tspan class="eq" x="422.6" y="147">f(x)</tspan>
+<tspan class="eq" x="26.6" y="173">χ = 2 − 2g</tspan>
+<tspan class="eq" x="389.6" y="251">Σ 1/p = ∞</tspan>
+<tspan class="eq" x="26.6" y="277">i² = −1</tspan>
+<tspan class="eq" x="26.6" y="329">y&#x27; = f(x, y)</tspan>
+<tspan class="eq" x="46.4" y="368">e ≈ 2.71828</tspan>
+<tspan class="eq" x="26.6" y="394">Σ 1/n² = π²/6</tspan>
+<tspan class="eq" x="363.2" y="420">V − E + F = 2</tspan>
 </text>
 <text x="486" y="30" fill="#24292f">
 <tspan x="486" y="30"><tspan class="cc"></tspan><tspan class="title">kiro@atef</tspan><tspan class="cc"> ———————————————————————————————————————————————————-—-</tspan></tspan>
@@ -76,12 +76,14 @@
 <tspan x="486" y="330"><tspan class="cc">. </tspan><tspan class="key">Avatar:</tspan><tspan class="cc"> ........................... </tspan><tspan class="value">Leonhard Euler (1707–1783)</tspan></tspan>
 <tspan x="486" y="350"><tspan class="cc">. </tspan></tspan>
 <tspan x="486" y="370"><tspan class="cc">- </tspan><tspan class="title">Contact</tspan><tspan class="cc"> ———————————————————————————————————————————————————-—-</tspan></tspan>
-<tspan x="486" y="390"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
-<tspan x="486" y="410"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="value">@kiro_af</tspan></tspan>
-<tspan x="486" y="430"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ......................................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
-<tspan x="486" y="450"><tspan class="cc">. </tspan></tspan>
-<tspan x="486" y="470"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————————————————————-—-</tspan></tspan>
-<tspan x="486" y="490"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">57 {Contributed: 155}</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Stars:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">64</tspan></tspan>
-<tspan x="486" y="510"><tspan class="cc">. </tspan><tspan class="key">Commits:</tspan><tspan class="cc"> ................... </tspan><tspan class="value">7,228</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Followers:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">53</tspan></tspan>
-<tspan x="486" y="530"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">12,091,479</tspan><tspan class="cc"> ( </tspan><tspan class="add">17,542,672++</tspan><tspan class="cc">, </tspan><tspan class="del">5,451,193--</tspan><tspan class="cc"> )</tspan></tspan>
+<tspan x="486" y="390"><tspan class="cc">. </tspan><tspan class="key">Email.Personal:</tspan><tspan class="cc"> .................. </tspan><tspan class="value">kirollosateffawze@gmail.com</tspan></tspan>
+<tspan x="486" y="410"><tspan class="cc">. </tspan><tspan class="key">Email.Work:</tspan><tspan class="cc"> ............................ </tspan><tspan class="value">kirollos@customgpt.ai</tspan></tspan>
+<tspan x="486" y="430"><tspan class="cc">. </tspan><tspan class="key">LinkedIn:</tspan><tspan class="cc"> ................................ </tspan><tspan class="value">kirollos-atef-fawze</tspan></tspan>
+<tspan x="486" y="450"><tspan class="cc">. </tspan><tspan class="key">X:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="value">@kiro_af</tspan></tspan>
+<tspan x="486" y="470"><tspan class="cc">. </tspan><tspan class="key">GitHub:</tspan><tspan class="cc"> ......................................... </tspan><tspan class="value">kirollosatef</tspan></tspan>
+<tspan x="486" y="490"><tspan class="cc">. </tspan></tspan>
+<tspan x="486" y="510"><tspan class="cc">- </tspan><tspan class="title">GitHub Stats</tspan><tspan class="cc"> ——————————————————————————————————————————————-—-</tspan></tspan>
+<tspan x="486" y="530"><tspan class="cc">. </tspan><tspan class="key">Repos:</tspan><tspan class="cc"> ..... </tspan><tspan class="value">57 {Contributed: 155}</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Stars:</tspan><tspan class="cc"> ............... </tspan><tspan class="value">64</tspan></tspan>
+<tspan x="486" y="550"><tspan class="cc">. </tspan><tspan class="key">Commits:</tspan><tspan class="cc"> ................... </tspan><tspan class="value">7,228</tspan><tspan class="cc"> | </tspan><tspan class="cc"></tspan><tspan class="key">Followers:</tspan><tspan class="cc"> ........... </tspan><tspan class="value">53</tspan></tspan>
+<tspan x="486" y="570"><tspan class="cc">. </tspan><tspan class="key">Lines of Code:</tspan><tspan class="cc"> ...... </tspan><tspan class="value">12,091,479</tspan><tspan class="cc"> ( </tspan><tspan class="add">17,542,672++</tspan><tspan class="cc">, </tspan><tspan class="del">5,451,193--</tspan><tspan class="cc"> )</tspan></tspan>
 </text></svg>
